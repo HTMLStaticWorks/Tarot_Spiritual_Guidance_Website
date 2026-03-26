@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Celestial Tarot & Spiritual Guidance</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-stars me-2 fs-3 text-secondary"></i>
+                <span class="fw-bold">Celestial Tarot</span>
+            </a>
+            
+            <div class="d-flex align-items-center d-lg-none">
+                <div class="theme-toggle me-3" id="theme-toggle">
+                    <i class="bi bi-moon-stars-fill text-secondary"></i>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
+                        <i class="bi bi-moon-stars-fill text-secondary"></i>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2 mt-4">
+                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section py-5 text-center" style="min-height: auto;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Our Spiritual Services</h1>
+            <p class="lead mb-0 opacity-75">Explore our range of intuitive readings and healing sessions.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590076215667-873d3950b7fd?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="General Reading">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Intuitive Tarot Spread</h4>
+                            <p class="opacity-75">A 30-minute deep dive into your current energy and upcoming opportunities.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$45.00</h5>
+                            <button class="btn btn-primary w-100">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572242296621-09689539fe5e?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Yearly Reading">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Yearly Manifestation</h4>
+                            <p class="opacity-75">Complete astrological and tarot overview for your entire year ahead.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$120.00</h5>
+                            <button class="btn btn-primary w-100">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Chakra Healing">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Chakra Balancing</h4>
+                            <p class="opacity-75">Guided meditation and distance reiki to clear your energetic centers.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$65.00</h5>
+                            <button class="btn btn-primary w-100">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Ritual Service">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Full Moon Ritual</h4>
+                            <p class="opacity-75">Participate in our monthly collective release and recharge ceremony.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$15.00</h5>
+                            <button class="btn btn-primary w-100">Join Ritual</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1623126315266-410a5682eec4?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Dream Analysis">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Dream Interpretation</h4>
+                            <p class="opacity-75">Expert guidance to decode the messages within your subconscious mind.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$40.00</h5>
+                            <button class="btn btn-primary w-100">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Crystal Therapy">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Crystal Consulting</h4>
+                            <p class="opacity-75">Find the perfect stones and crystals to support your specific needs.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$30.00</h5>
+                            <button class="btn btn-primary w-100">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 7 (added for even count > 6) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Sound Bath">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Virtual Sound Bath</h4>
+                            <p class="opacity-75">Immersive auditory healing session with singing bowls and mantras.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$25.00</h5>
+                            <button class="btn btn-primary w-100">Join Session</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 8 (added for even count > 6) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Spiritual Coaching">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold">Life Path Coaching</h4>
+                            <p class="opacity-75">Ongoing support and guidance to align your life with your soul's purpose.</p>
+                            <h5 class="text-secondary fw-bold mb-3">$85.00 / hr</h5>
+                            <button class="btn btn-primary w-100">Book Coaching</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                        <h4 class="fw-bold mb-0">Celestial Tarot</h4>
+                    </div>
+                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom and sacred tools. Join our community of seekers.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#about">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="index.html#shop">Shop</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Contact</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Shipping</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">Subscribe to Guidance</h6>
+                    <p class="small opacity-75">Receive moon phase alerts and exclusive energy forecasts.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-secondary text-primary fw-bold" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4 opacity-10">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2026 Celestial Tarot. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="small mb-0">Designed with <i class="bi bi-heart-fill text-danger mx-1"></i> for Spiritual Seekers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Specific toggle for desktop (sync with main.js logic)
+        const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
+        if (themeToggleDesktop) {
+            themeToggleDesktop.addEventListener('click', () => {
+                document.getElementById('theme-toggle').click();
+            });
+        }
+    </script>
+</body>
+</html>

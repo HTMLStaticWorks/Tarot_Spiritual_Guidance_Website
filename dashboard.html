@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Celestial Tarot & Spiritual Guidance</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .dashboard-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 280px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            transition: var(--transition);
+            z-index: 1000;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            background-color: var(--tertiary-color);
+            min-height: 100vh;
+            transition: var(--transition);
+        }
+        .nav-pills .nav-link {
+            color: rgba(255,255,255,0.7);
+            padding: 12px 20px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+        .nav-pills .nav-link:hover, .nav-pills .nav-link.active {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        .nav-pills .nav-link i {
+            margin-right: 15px;
+        }
+        .stat-card {
+            border: none;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: #FFFFFF;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        [data-theme="dark"] .stat-card {
+            background-color: #2D0B5A;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        @media (max-width: 991px) {
+            .sidebar {
+                margin-left: -280px;
+            }
+            .sidebar.active {
+                margin-left: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar p-4" id="sidebar">
+            <div class="d-flex align-items-center mb-5">
+                <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                <h4 class="fw-bold mb-0">Celestial Tarot</h4>
+            </div>
+
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active"><i class="bi bi-grid-fill"></i> Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-people-fill"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-cart-fill"></i> Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="bi bi-chat-dots-fill"></i> Messages</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a href="#" class="nav-link"><i class="bi bi-gear-fill"></i> Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                </li>
+            </ul>
+
+            <div class="mt-auto pt-5">
+                <div class="card bg-secondary text-primary border-0 rounded-4 p-3">
+                    <p class="small fw-bold mb-2">Upgrade to Pro</p>
+                    <p class="small opacity-75 mb-3">Get unlimited readings and deep insights.</p>
+                    <button class="btn btn-primary btn-sm w-100">Upgrade Now</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Nav -->
+            <nav class="navbar navbar-expand-lg bg-white border-bottom px-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler d-lg-none" type="button" onclick="document.getElementById('sidebar').classList.toggle('active')">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h5 class="fw-bold mb-0 d-none d-md-block">Spiritual Analytics Overview</h5>
+                    <div class="ms-auto d-flex align-items-center">
+                        <div class="theme-toggle me-4" id="theme-toggle">
+                            <i class="bi bi-moon-stars-fill text-secondary"></i>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-primary" data-bs-toggle="dropdown">
+                                <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=2D0B5A&color=E0C097" alt="User" class="rounded-circle me-2" width="40">
+                                <span class="fw-bold d-none d-sm-inline">Jane Doe</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm mt-3">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="index.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="p-4">
+                <!-- Stat Cards -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h6 class="text-muted mb-2">Total Readings</h6>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="fw-bold mb-0">128</h3>
+                                <span class="badge bg-success-subtle text-success">+12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h6 class="text-muted mb-2">Active Sessions</h6>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="fw-bold mb-0">12</h3>
+                                <span class="badge bg-info-subtle text-info">Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h6 class="text-muted mb-2">Pending Orders</h6>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="fw-bold mb-0">05</h3>
+                                <span class="badge bg-warning-subtle text-warning">Urgent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h6 class="text-muted mb-2">Unread Messages</h6>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="fw-bold mb-0">08</h3>
+                                <span class="badge bg-danger-subtle text-danger">New</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity & Chart Area -->
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="stat-card h-100">
+                            <h5 class="fw-bold mb-4">Reading History & Insight Trend</h5>
+                            <div class="p-5 text-center border border-dashed rounded-4">
+                                <i class="bi bi-graph-up display-4 text-secondary opacity-50"></i>
+                                <p class="mt-3 text-muted">Analytics chart would be rendered here using Chart.js or D3.js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="stat-card h-100">
+                            <h5 class="fw-bold mb-4">Upcoming Sessions</h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="rounded-circle bg-secondary text-primary p-2 me-3">
+                                        <i class="bi bi-calendar-event"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Full Tarot Reading</h6>
+                                        <p class="small text-muted mb-0">Tomorrow, 10:00 AM</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-4">
+                                    <div class="rounded-circle bg-secondary text-primary p-2 me-3">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Relationship Insight</h6>
+                                        <p class="small text-muted mb-0">April 2nd, 02:30 PM</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-secondary text-primary p-2 me-3">
+                                        <i class="bi bi-lightning"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Energy Alignment</h6>
+                                        <p class="small text-muted mb-0">April 5th, 11:15 AM</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100 mt-4">View All Sessions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
