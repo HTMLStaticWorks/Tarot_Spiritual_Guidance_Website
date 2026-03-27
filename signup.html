@@ -12,132 +12,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .auth-container {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #1a0633 0%, #2d0b5a 50%, #1a0633 100%);
-            padding: 40px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-        .auth-container::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(224, 192, 151, 0.05) 0%, transparent 70%);
-            top: -50%;
-            left: -50%;
-            animation: rotate 25s linear infinite;
-        }
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .auth-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 50px;
-            width: 100%;
-            max-width: 520px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 10;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        [data-theme="dark"] .auth-card {
-            background: rgba(45, 11, 90, 0.8);
-            color: #FFFFFF;
-        }
-        .social-login .btn {
-            border: 1px solid rgba(0,0,0,0.08);
-            border-radius: 15px;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            transition: all 0.3s ease;
-            background: #fff;
-        }
-        .social-login .btn:hover {
-            background-color: var(--tertiary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .form-control-lg {
-            border-radius: 12px;
-            padding: 14px 20px;
-            font-size: 1rem;
-            border: 2px solid #f1f1f1;
-        }
-        .form-control-lg:focus {
-            border-color: var(--secondary-color);
-            box-shadow: none;
-        }
-    </style>
-</head>
-<body>
+<body class="bg-dark">
 
-    <div class="auth-container">
-        <div class="auth-card">
-            <div class="text-center mb-5">
-                <a href="index.html" class="d-inline-flex align-items-center text-decoration-none mb-3">
-                    <i class="bi bi-stars fs-1 text-secondary me-2"></i>
-                    <h2 class="fw-bold text-primary mb-0">Celestial Tarot</h2>
-                </a>
-                <h4 class="fw-bold text-primary">Begin Your Journey</h4>
-                <p class="text-muted">Join our community of seekers and luminaries</p>
+    <div class="theme-rtl-controls position-fixed top-0 end-0 m-4 d-flex gap-3" style="z-index: 1000;">
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="bi bi-moon-stars-fill text-white"></i>
+        </div>
+        <div class="rtl-toggle" id="rtl-toggle" onclick="document.documentElement.dir = document.documentElement.dir === 'rtl' ? 'ltr' : 'rtl'">
+            <i class="bi bi-translate text-white"></i>
+        </div>
+    </div>
+
+    <div class="auth-container d-flex align-items-center justify-content-center py-5" style="min-height: 100vh;">
+        <div class="auth-card card p-4 p-md-5 border-0 shadow-lg" style="max-width: 500px; width: 100%;">
+            <div class="text-center mb-4">
+                <i class="bi bi-stars fs-1 text-primary"></i>
+                <h2 class="fw-bold text-primary mt-2">Celestial Guidance</h2>
+                <h4 class="fw-bold mt-4">Begin Your Journey</h4>
             </div>
 
             <form action="dashboard.html">
-                <div class="row g-3 mb-4">
-                    <div class="col-md-6">
-                        <label class="form-label fw-bold text-primary">First Name</label>
-                        <input type="text" class="form-control form-control-lg" placeholder="Jane" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label fw-bold text-primary">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" placeholder="Doe" required>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">First Name</label>
+                    <input type="text" class="form-control" name="fname" placeholder="Jane" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Last Name</label>
+                    <input type="text" class="form-control" name="lname" placeholder="Doe" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email Address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Create Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" class="form-control" id="signup-password" placeholder="••••••••" required>
+                        <i class="bi bi-eye password-toggle" onclick="const p = document.getElementById('signup-password'); p.type = p.type === 'password' ? 'text' : 'password'"></i>
                     </div>
                 </div>
                 <div class="mb-4">
-                    <label class="form-label fw-bold text-primary">Email Address</label>
-                    <input type="email" class="form-control form-control-lg" placeholder="name@example.com" required>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label small" for="terms">
+                            I agree to the <a href="#" class="text-primary text-decoration-none fw-bold">Terms of Insight</a>
+                        </label>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label class="form-label fw-bold text-primary">Create Password</label>
-                    <input type="password" class="form-control form-control-lg" placeholder="••••••••" required>
-                </div>
-                <div class="mb-4 form-check">
-                    <input type="checkbox" class="form-check-input" id="terms" required>
-                    <label class="form-check-label small text-muted" for="terms">
-                        I agree to the <a href="#" class="text-secondary fw-bold text-decoration-none">Terms of Insight</a> and <a href="#" class="text-secondary fw-bold text-decoration-none">Privacy Policy</a>
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg w-100 mb-4 shadow-sm fw-bold py-3">Create Account</button>
+                <button type="submit" class="btn btn-primary w-100 py-3 mb-4">Create Account</button>
             </form>
 
             <div class="text-center mb-4 position-relative">
-                <hr class="text-muted opacity-25">
-                <span class="position-absolute top-50 start-50 translate-middle px-3 bg-white text-muted small" id="or-label">Or join with</span>
+                <hr>
+                <span class="position-absolute top-50 start-50 translate-middle px-3 bg-white text-muted small">Or join with</span>
             </div>
 
-            <div class="row g-3 social-login">
+            <div class="row g-3">
                 <div class="col-6">
-                    <a href="#" class="btn btn-light w-100"><i class="bi bi-google text-danger"></i></a>
+                    <button class="btn btn-secondary w-100"><i class="bi bi-google me-2"></i>Google</button>
                 </div>
                 <div class="col-6">
-                    <a href="#" class="btn btn-light w-100"><i class="bi bi-apple text-dark"></i></a>
+                    <button class="btn btn-secondary w-100"><i class="bi bi-apple me-2"></i>Apple</button>
                 </div>
             </div>
 
-            <p class="text-center mt-5 mb-0 text-muted">
-                Already on the path? <a href="login.html" class="text-secondary fw-bold text-decoration-none">Login Here</a>
+            <p class="text-center mt-4 mb-0">
+                Already on the path? <a href="login.html" class="fw-bold text-decoration-none text-primary">Login Here</a>
             </p>
         </div>
     </div>

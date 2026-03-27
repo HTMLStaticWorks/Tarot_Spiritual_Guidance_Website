@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrology & Energy Healing | Celestial Journey</title>
+    <title>Astrology & Energy | Celestial Guidance</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hero-astrology {
+            background: linear-gradient(rgba(26, 8, 54, 0.8), rgba(26, 8, 54, 0.8)), 
+                        url('https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4c5?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,8 +28,8 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <i class="bi bi-moon-stars me-2 fs-3 text-secondary"></i>
-                <span class="fw-bold">Celestial Astrology</span>
+                <i class="bi bi-stars me-2 fs-3 text-secondary"></i>
+                <span class="fw-bold">Celestial Tarot</span>
             </a>
             
             <div class="d-flex align-items-center d-lg-none">
@@ -38,22 +47,20 @@
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Home
                         </a>
-                        <ul class="dropdown-menu border-0 shadow-sm">
-                            <li><a class="dropdown-item" href="index.html">Home 1: Tarot Center</a></li>
-                            <li><a class="dropdown-item active" href="index2.html">Home 2: Astrology & Energy</a></li>
+                        <ul class="dropdown-menu border-0 shadow-sm glass-card">
+                            <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Premium Version</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#celestial-events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
                     <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
-                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
-                    <a href="signup.html" class="btn btn-primary">Signup</a>
+                    <a href="signup.html" class="btn btn-primary">Join Now</a>
                 </div>
             </div>
         </div>
@@ -68,18 +75,17 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html">Home 1: Tarot Center</a></li>
-                            <li><a class="dropdown-item active" href="index2.html">Home 2: Astrology & Energy</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-sm glass-card">
+                        <li><a class="dropdown-item" href="index.html">Home 1 - Tarot</a></li>
+                        <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#celestial-events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#zodiac">Zodiac</a></li>
             </ul>
             <div class="d-grid gap-2 mt-4">
                 <a href="login.html" class="btn btn-outline-primary">Login</a>
@@ -89,154 +95,181 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="hero-section d-flex align-items-center justify-content-center text-center" style="background: linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.9), rgba(var(--bs-secondary-rgb), 0.2)), url('https://images.unsplash.com/photo-1532051662580-5a3501a30a10?q=80&w=2000&auto=format&fit=crop') center/cover;">
+    <header class="hero-astrology d-flex align-items-center justify-content-center text-center text-white">
         <div class="container py-5">
             <div class="row justify-content-center">
-                <div class="col-lg-8 animate-fade-in">
-                    <span class="badge bg-secondary text-primary mb-3 px-3 py-2 rounded-pill fw-bold">Align Your Frequency</span>
-                    <h1 class="display-1 fw-bold mb-4 text-white">Awaken Your <span class="text-secondary">Cosmic</span> Blueprint</h1>
-                    <p class="lead mb-5 text-white opacity-75">Harness the power of planetary alignments, moon phases, and deep energy clearing to transform your life and master your reality.</p>
+                <div class="col-lg-10">
+                    <span class="badge bg-secondary text-primary mb-3 px-3 py-2 rounded-pill fw-bold">Map of the Infinite</span>
+                    <h1 class="display-1 fw-bold mb-4">Master Your <span class="text-secondary">Cosmic Blueprint</span></h1>
+                    <p class="lead mb-5 opacity-75 fs-4">Harness the vibrational power of stars and energy alignment to manifest your highest potential. Your destiny is written in the heavens.</p>
                     <div class="d-flex justify-content-center gap-3">
-                        <a href="services.html" class="btn btn-secondary text-primary btn-lg px-5 fw-bold">Discover Your Chart</a>
-                        <a href="#about" class="btn btn-outline-light btn-lg px-5">Explore Energy Healing</a>
+                        <a href="#zodiac" class="btn btn-primary btn-lg px-5">Get Your Chart</a>
+                        <a href="#healing" class="btn btn-secondary btn-lg px-5">Energy Healing</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Energy Healing Section -->
-    <section class="section-padding bg-light" id="about">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-lg-6 mb-4 mb-lg-0 position-relative">
-                    <img src="https://images.unsplash.com/photo-1615266895738-11f1371cd7e5?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="Crystal Energy">
-                </div>
-                <div class="col-lg-6 pe-lg-5">
-                    <h6 class="text-secondary fw-bold text-uppercase mb-2">Our Philosophy</h6>
-                    <h2 class="display-5 fw-bold mb-4 text-primary">Healing from the Stars Within</h2>
-                    <p class="mb-4 text-muted">Auras, chakras, and planetary transits govern our daily existence. By understanding and clearing our energetic blocks, we step into a higher vibration. We specialize in deep soul charting and crystal therapy to help you re-align.</p>
-                    <div class="row g-4 mb-4">
-                        <div class="col-6">
-                            <div class="card border-0 bg-white p-3 shadow-sm rounded-4 text-center">
-                                <i class="bi bi-star-fill text-secondary fs-3 mb-2"></i>
-                                <span class="fw-bold d-block text-primary">Natal Chart Info</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card border-0 bg-white p-3 shadow-sm rounded-4 text-center">
-                                <i class="bi bi-gem text-secondary fs-3 mb-2"></i>
-                                <span class="fw-bold d-block text-primary">Crystal Healing</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#about" class="btn btn-primary px-4">Begin Transformation</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Highlights Features -->
-    <section class="section-padding">
-        <div class="container text-center">
-            <h6 class="text-secondary fw-bold text-uppercase mb-2">Elevate Your Vibration</h6>
-            <h2 class="display-5 fw-bold mb-5 text-primary">Esoteric Services</h2>
-            <div class="row g-4 text-start">
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center transition-up">
-                        <div class="icon-circle bg-primary bg-opacity-10 text-primary mx-auto mb-4" style="width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="bi bi-globe fs-1"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Vedic Astrology</h4>
-                        <p class="text-muted">A profound system predicting key life events through ancient planetary science and nakshatras.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center transition-up">
-                        <div class="icon-circle bg-secondary bg-opacity-10 text-secondary mx-auto mb-4" style="width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="bi bi-wind fs-1"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Aura Cleansing</h4>
-                        <p class="text-muted">Remove stagnant energies, cord-cutting, and aura repair using sound bowls and reiki.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center transition-up">
-                        <div class="icon-circle bg-primary bg-opacity-10 text-primary mx-auto mb-4" style="width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                            <i class="bi bi-calendar-event fs-1"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Synastry Reading</h4>
-                        <p class="text-muted">Analyze relationship compatibility by comparing two birth charts to find soul connections.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Tool (Aura Scanner / Moon Tracker widget) -->
-    <section class="section-padding bg-primary text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="p-5 border border-secondary border-dashed rounded-4 bg-white bg-opacity-10 text-center position-relative overflow-hidden" id="aura-container">
-                        <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 opacity-25" id="aura-glow" style="background: radial-gradient(circle, #f39c12 0%, transparent 60%); transition: all 1s ease;"></div>
-                        <i class="bi bi-fingerprint display-1 text-secondary pulse-animation position-relative" style="z-index: 2"></i>
-                        <h4 class="mt-4 position-relative fw-bold text-secondary" style="z-index: 2" id="aura-result">Touch to Reveal Energy</h4>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5">
-                    <h6 class="text-secondary fw-bold text-uppercase mb-2">Interactive Insight</h6>
-                    <h2 class="display-5 fw-bold mb-3">Today's Micro Energy Check</h2>
-                    <p class="lead mb-4 opacity-75">Connect with the digital frequency portal. Focus on your intention, place your cursor over the scanner, and click to reveal a randomized auric insight for your day.</p>
-                    <ul class="list-unstyled mb-4 opacity-75">
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Receive an immediate color wavelength</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Understand your current subtle energetic state</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Actionable advice to balance your frequency</li>
-                    </ul>
-                    <button class="btn btn-secondary btn-lg px-5 text-primary border-0 shadow fw-bold" onclick="generateAura()">Scan Aura</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Meet the Healers -->
-    <section class="section-padding">
+    <!-- Zodiac Element Insight -->
+    <section class="section-padding" id="zodiac">
         <div class="container">
             <div class="text-center mb-5">
-                <h6 class="text-secondary fw-bold text-uppercase mb-2">Our Practitioners</h6>
-                <h2 class="display-5 fw-bold text-primary">Masters of the Craft</h2>
+                <h6 class="text-secondary fw-bold text-uppercase mb-2">Insight Tool</h6>
+                <h2 class="display-5 fw-bold text-primary">Reveal Your Element</h2>
+                <p class="text-muted">Find out how your zodiac element influences your emotional landscape.</p>
+            </div>
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="card p-4 border-0 shadow-sm hover-zoom h-100">
+                        <i class="bi bi-fire fs-1 text-danger mb-3"></i>
+                        <h4 class="fw-bold">Fire</h4>
+                        <p class="small opacity-75">Aries, Leo, Sagittarius</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card p-4 border-0 shadow-sm hover-zoom h-100">
+                        <i class="bi bi-water fs-1 text-info mb-3"></i>
+                        <h4 class="fw-bold">Water</h4>
+                        <p class="small opacity-75">Cancer, Scorpio, Pisces</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card p-4 border-0 shadow-sm hover-zoom h-100">
+                        <i class="bi bi-wind fs-1 text-secondary mb-3"></i>
+                        <h4 class="fw-bold">Air</h4>
+                        <p class="small opacity-75">Gemini, Libra, Aquarius</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card p-4 border-0 shadow-sm hover-zoom h-100">
+                        <i class="bi bi-globe-americas fs-1 text-success mb-3"></i>
+                        <h4 class="fw-bold">Earth</h4>
+                        <p class="small opacity-75">Taurus, Virgo, Capricorn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg px-5">Calculate My Dominant Element</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy Healing Deep Dive -->
+    <section class="section-padding bg-light" id="healing">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="Energy Alignment">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-secondary fw-bold text-uppercase mb-2">Vibrational Medicine</h6>
+                    <h2 class="display-5 fw-bold text-primary mb-4">The Aura Cleansing Ritual</h2>
+                    <p class="mb-4">Ancient energy healing practices meet modern intuitive science. We don't just clear blocks; we recalibrate your entire vibrational frequency to match your soul's true essence.</p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi bi-diamond-fill text-secondary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Crystalline Calibration</h5>
+                                    <p class="text-muted small">Using heavy-vibration gems to pull dense energy from your primary energy centers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi bi-soundwave text-secondary mt-1 me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Sonic Soul Wash</h5>
+                                    <p class="text-muted small">Tibetan singing bowls and 432Hz frequencies to dissolve mental barriers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celestial Events Calendar -->
+    <section class="section-padding" id="celestial-events">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-secondary fw-bold text-uppercase mb-2">Transit Alert</h6>
+                <h2 class="display-5 fw-bold">Heavenly Transitions</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center">
+                        <div class="display-4 fw-bold text-secondary mb-2">29</div>
+                        <h6 class="text-uppercase fw-bold pb-3 border-bottom">March 2026</h6>
+                        <h4 class="fw-bold mt-4">Full Moon in Libra</h4>
+                        <p class="opacity-75">Focus on relationships, balance, and aesthetic harmony. A perfect time for heart-opening rituals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center">
+                        <div class="display-4 fw-bold text-secondary mb-2">12</div>
+                        <h6 class="text-uppercase fw-bold pb-3 border-bottom">April 2026</h6>
+                        <h4 class="fw-bold mt-4">Jupiter Sextile Saturn</h4>
+                        <h6 class="badge bg-primary px-3 mb-3">Rare Event</h6>
+                        <p class="opacity-75">Structural growth and expansion. Business manifestations are highly supported today.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 p-4 border-0 shadow-sm glass-card text-center text-primary">
+                        <div class="display-4 fw-bold text-secondary mb-2">21</div>
+                        <h6 class="text-uppercase fw-bold pb-3 border-bottom">April 2026</h6>
+                        <h4 class="fw-bold mt-4">Venus Enters Gemini</h4>
+                        <p class="opacity-75">Social energy peaks. Intellectual connections and curiosity drive romantic interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Astrologers -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-7">
+                    <h6 class="text-secondary fw-bold text-uppercase mb-2">Lineage</h6>
+                    <h2 class="display-5 fw-bold">Star Whisperers</h2>
+                    <p class="lead opacity-75 mb-0">Our astrologers carry decades of research into planetary influence and archetypal shifts.</p>
+                </div>
             </div>
             <div class="row g-4 text-primary">
-                <!-- Healer 1 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" class="card-img-top" alt="Vedic Astrologer" style="height: 300px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h4 class="fw-bold mb-0">Dr. Alana Ray</h4>
-                            <p class="text-secondary fw-bold small text-uppercase">Vedic Astrologer</p>
-                            <p class="text-muted small">Bridging scientific psychology with ancient astrological charting.</p>
+                <div class="col-md-6">
+                    <div class="card bg-white p-0 border-0 overflow-hidden shadow h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=600&auto=format&fit=crop" class="img-fluid h-100 w-100" object-fit="cover" alt="Astrologer">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-1">Dr. Julian Vance</h4>
+                                    <p class="text-muted small">Cosmic Architect</p>
+                                    <p class="small opacity-75">Specializes in mundane astrology and global cycles affecting personal paths.</p>
+                                    <a href="#" class="text-secondary fw-bold text-decoration-none">Read Full Bio <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Healer 2 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
-                        <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?q=80&w=400&auto=format&fit=crop" class="card-img-top" alt="Reiki Master" style="height: 300px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h4 class="fw-bold mb-0">Elena Vasquez</h4>
-                            <p class="text-secondary fw-bold small text-uppercase">Reiki Grandmaster</p>
-                            <p class="text-muted small">Channeling pure universal life force energy for holistic chakra healing.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Healer 3 -->
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
-                        <img src="https://images.unsplash.com/photo-1623184663110-89ba5b565eb6?q=80&w=400&auto=format&fit=crop" class="card-img-top" alt="Crystal Therapist" style="height: 300px; object-fit: cover;">
-                        <div class="card-body p-4 text-center">
-                            <h4 class="fw-bold mb-0">Jade Simmons</h4>
-                            <p class="text-secondary fw-bold small text-uppercase">Crystal Therapist</p>
-                            <p class="text-muted small">Curating customized gemstone grids to manifest desires and block negativity.</p>
+                <div class="col-md-6">
+                    <div class="card bg-white p-0 border-0 overflow-hidden shadow h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop" class="img-fluid h-100 w-100" object-fit="cover" alt="Astrologer">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h4 class="fw-bold mb-1">Lyra Moonchild</h4>
+                                    <p class="text-muted small">Lunar Priestess</p>
+                                    <p class="small opacity-75">Expert in synastry and the mathematics of romantic compatibility.</p>
+                                    <a href="#" class="text-secondary fw-bold text-decoration-none">Read Full Bio <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,58 +280,40 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row g-4 border-bottom border-light border-opacity-10 pb-5 mb-4">
+            <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-moon-stars fs-3 text-secondary me-2"></i>
-                        <h4 class="fw-bold mb-0">Celestial Astrology</h4>
+                        <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                        <h4 class="fw-bold mb-0 text-white">Celestial Tarot</h4>
                     </div>
-                    <p class="opacity-75 mb-4">A sanctuary for soul-level transformation. Astrology, energy healing, and profound cosmic insight await.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#"><i class="bi bi-tiktok fs-4"></i></a>
-                        <a href="#"><i class="bi bi-youtube fs-4"></i></a>
-                    </div>
-                </div>
-                <!-- Footer links updated -->
-                <div class="col-md-2">
-                    <h6 class="fw-bold mb-4">Company</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#about">About Us</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="#shop">Shop</a></li>
-                        <li class="mb-2"><a href="#">Blog</a></li>
-                    </ul>
+                    <p class="opacity-75 mb-4 text-white">Empowering souls to find their path through intuitive wisdom and sacred tools.</p>
                 </div>
                 <div class="col-md-2">
-                    <h6 class="fw-bold mb-4">Support</h6>
+                    <h6 class="fw-bold mb-4 text-white">Company</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Contact</a></li>
-                        <li class="mb-2"><a href="#">FAQ</a></li>
-                        <li class="mb-2"><a href="#">Terms of Use</a></li>
-                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="index.html#about" class="text-white text-opacity-75">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-75">Services</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-4">Subscribe for Moon Alerts</h6>
-                    <p class="small opacity-75">Get notified about crucial planetary transits and full moon rituals.</p>
+                <div class="col-md-2 text-white">
+                    <h6 class="fw-bold mb-4">Cosmic Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#celestial-events" class="text-white text-opacity-75">Events</a></li>
+                        <li class="mb-2"><a href="#zodiac" class="text-white text-opacity-75">Calculators</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-white">
+                    <h6 class="fw-bold mb-4">Astral Alerts</h6>
                     <form class="mt-3">
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control py-2" placeholder="Your Email Address">
-                            <button class="btn btn-secondary text-primary fw-bold px-4" type="button">Subscribe</button>
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-secondary text-primary fw-bold" type="button">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; 2026 Celestial Astrology. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <p class="small mb-0">Empowered by the <i class="bi bi-stars text-secondary mx-1"></i> Cosmos</p>
-                </div>
-            </div>
+            <hr class="mt-5 mb-4 opacity-10">
+            <p class="small mb-0 text-center text-white text-opacity-50">&copy; 2026 Celestial Tarot. All rights reserved.</p>
         </div>
     </footer>
 
@@ -311,30 +326,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
-    <script>
-        // Specific toggle for desktop (sync with main.js logic)
-        document.getElementById('theme-toggle-desktop').addEventListener('click', () => {
-            document.getElementById('theme-toggle').click();
-        });
-
-        // Interactive Aura Widget
-        function generateAura() {
-            const colors = [
-                { hex: '#9b59b6', text: 'Purple: Deep intuition and spiritual awakening.', class: 'text-white' },
-                { hex: '#3498db', text: 'Blue: Clear communication and calm focus.', class: 'text-white' },
-                { hex: '#2ecc71', text: 'Green: Heart healing and natural growth.', class: 'text-white' },
-                { hex: '#f1c40f', text: 'Yellow: Confidence, joy, and active energy.', class: 'text-dark' },
-                { hex: '#e74c3c', text: 'Red: Passion, grounding, and physical vitality.', class: 'text-white' }
-            ];
-            
-            const random = colors[Math.floor(Math.random() * colors.length)];
-            
-            const glow = document.getElementById('aura-glow');
-            const result = document.getElementById('aura-result');
-            
-            glow.style.background = `radial-gradient(circle, ${random.hex} 0%, transparent 70%)`;
-            result.innerHTML = `<span style="color: ${random.hex}; filter: brightness(1.2) drop-shadow(0 0 2px rgba(0,0,0,0.5));">${random.text}</span>`;
-        }
-    </script>
 </body>
 </html>
