@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Celestial Tarot & Spiritual Guidance</title>
+    <title>Services | Celestial Tarot</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -21,8 +21,8 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/img/favicon.svg" alt="Celestial Guidance" width="34" height="34" style="border-radius:50%;">
-                <span class="fw-bold">Celestial Guidance</span>
+                <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" style="border-radius:50%;">
+                <span class="fw-bold">Celestial Tarot</span>
             </a>
             
             <div class="d-flex align-items-center d-lg-none">
@@ -42,7 +42,7 @@
                         </a>
                         <ul class="dropdown-menu border-0 shadow-sm glass-card">
                             <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Premium Version</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
@@ -51,6 +51,9 @@
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
+                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                        <i class="bi bi-translate text-secondary"></i>
+                    </div>
                     <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
@@ -60,268 +63,72 @@
         </div>
     </nav>
 
-    <!-- Mobile Offcanvas Menu -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
-                    </a>
-                    <ul class="dropdown-menu border-0 shadow-sm glass-card">
-                        <li><a class="dropdown-item" href="index.html">Home 1 - Tarot</a></li>
-                        <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-            </ul>
-            <div class="d-grid gap-2 mt-4">
-                <a href="login.html" class="btn btn-outline-primary">Login</a>
-                <a href="signup.html" class="btn btn-primary">Signup</a>
-            </div>
-        </div>
-    </div>
-
     <!-- Page Header -->
-    <section class="hero-section py-5 text-center" style="min-height: auto;">
+    <header class="hero-section py-5 text-center" style="min-height: auto;">
         <div class="container py-4">
             <h6 class="text-secondary fw-bold text-uppercase mb-2">Offerings</h6>
             <h1 class="display-4 fw-bold">Sacred Services & Sessions</h1>
             <p class="lead mb-0 opacity-75">Tailored intuitive guidance and energetic support for every stage of your journey.</p>
         </div>
-    </section>
+    </header>
 
     <!-- Services Grid -->
     <section class="section-padding">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Intuitive Readings</h2>
-                <p class="text-muted text-primary">Focused sessions to uncover clarity and hidden truths.</p>
-            </div>
-            <div class="row g-4 text-primary">
+            <div class="row g-4 d-flex align-items-stretch">
                 <!-- Service 1 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1590076215667-873d3950b7fd?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="General Reading">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Intuitive Tarot Spread</h4>
+                    <div class="service-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1590076215667-873d3950b7fd?q=80&w=600&fm=jpg&fit=crop" alt="General Reading">
+                        <div class="service-card-body">
+                            <h4 class="fw-bold mb-2">Intuitive Tarot Spread</h4>
                             <p class="opacity-75 small mb-3">A deep dive into your current energy archetypes and immediate opportunities.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                            <ul class="list-unstyled small mb-4">
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> 10-Card Celtic Cross</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> 30-Minute Video Call</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Digital PDF Session Summary</li>
                             </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$45.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
+                            <div class="service-card-footer">
+                                <h5 class="text-secondary fw-bold mb-0 text-secondary">$45.00</h5>
+                                <a href="contact.html?service=booking" class="btn btn-primary btn-sm px-4">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- ... other items ... -->
+                <!-- Service 2 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1572242296621-09689539fe5e?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Yearly Reading">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Yearly Road Map</h4>
+                    <div class="service-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1572242296621-09689539fe5e?q=80&w=600&fm=jpg&fit=crop" alt="Yearly Reading">
+                        <div class="service-card-body">
+                            <h4 class="fw-bold mb-2">Yearly Road Map</h4>
                             <p class="opacity-75 small mb-3">Comprehensive 12-month outlook using astrology and tarot transitions.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                            <ul class="list-unstyled small mb-4">
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Monthly Theme Breakdown</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Key Astrological Dates</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> 60-Minute Deep Dive</li>
                             </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$120.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
+                            <div class="service-card-footer">
+                                <h5 class="text-secondary fw-bold mb-0 text-secondary">$120.00</h5>
+                                <a href="contact.html?service=booking" class="btn btn-primary btn-sm px-4">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Chakra Healing">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Chakra Tuning</h4>
+                    <div class="service-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?q=80&w=600&fm=jpg&fit=crop" alt="Chakra Healing">
+                        <div class="service-card-body">
+                            <h4 class="fw-bold mb-2">Chakra Tuning</h4>
                             <p class="opacity-75 small mb-3">Distance reiki and crystal grid work to align your seven major chakras.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
+                            <ul class="list-unstyled small mb-4">
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Energy Field Scan</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Blockage Removal Ritual</li>
                                 <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Personal Crystal Pairing</li>
                             </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$65.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Ritual Service">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Ritual Design</h4>
-                            <p class="opacity-75 small mb-3">Customized rituals for personal transitions, house blessings, or releases.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Custom Incantation Script</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Material Checklist</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Timing Alignment Guide</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$55.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1623126315266-410a5682eec4?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Shadow Work">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Shadow Integration</h4>
-                            <p class="opacity-75 small mb-3">Deep psychological and spiritual work to embrace hidden aspects of self.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Archetypal Analysis</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Integration Journal Prompts</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> 45-Minute Support Call</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$95.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 overflow-hidden border-0 shadow-sm glass-card">
-                        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Akashic Records">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h4 class="fw-bold">Akashic Reading</h4>
-                            <p class="opacity-75 small mb-3">Accessing the vibrational record of your soul's journey across lifetimes.</p>
-                            <ul class="list-unstyled small mb-4 flex-grow-1">
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Soul Purpose Blueprint</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> Karmic Pattern Insight</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-secondary me-2"></i> 3 Questions deep dive</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <h5 class="text-secondary fw-bold mb-0">$150.00</h5>
-                                <button class="btn btn-primary btn-sm px-4">Book</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Tiers [NEW] -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-secondary fw-bold text-uppercase mb-2">Packages</h6>
-                <h2 class="display-5 fw-bold">Spiritual Mentorship Tiers</h2>
-                <p class="text-muted text-primary">Ongoing support for deep transformation.</p>
-            </div>
-            <div class="row g-4 text-primary">
-                <div class="col-md-4">
-                    <div class="card h-100 p-5 border-0 shadow-sm text-center">
-                        <h5 class="fw-bold">The Seeker</h5>
-                        <h2 class="display-4 fw-bold text-secondary my-4">$199<span class="fs-6 text-muted">/mo</span></h2>
-                        <ul class="list-unstyled mb-5 text-start opacity-75">
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 1 Full Tarot Reading</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Monthly Lunar Guide</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Email Support (2/mo)</li>
-                        </ul>
-                        <button class="btn btn-secondary w-100">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-5 border-0 shadow bg-primary text-secondary text-center position-relative overflow-hidden">
-                        <div class="position-absolute top-0 start-0 bg-secondary text-primary px-4 py-1 small fw-bold" style="transform: rotate(-45deg) translate(-25px, 0px); width: 150px;">Popular</div>
-                        <h5 class="fw-bold">The Awakened</h5>
-                        <h2 class="display-4 fw-bold text-secondary my-4">$349<span class="fs-6 text-white text-opacity-75">/mo</span></h2>
-                        <ul class="list-unstyled mb-5 text-start">
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 2 Readings or Healing</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Weekly Energy Forecast</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Private Slack Channel</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 10% Shop Discount</li>
-                        </ul>
-                        <button class="btn btn-primary w-100">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 p-5 border-0 shadow-sm text-center">
-                        <h5 class="fw-bold">The Luminary</h5>
-                        <h2 class="display-4 fw-bold text-secondary my-4">$599<span class="fs-6 text-muted">/mo</span></h2>
-                        <ul class="list-unstyled mb-5 text-start opacity-75">
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 4 VIP Bio-Energetic Sessions</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Custom Natal Chart Work</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 24/7 Voxer Mentorship</li>
-                            <li class="mb-3"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Complimentary Ritual Kit</li>
-                        </ul>
-                        <button class="btn btn-secondary w-100">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Preparation Guide [NEW] -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=800&fm=jpg&fit=crop" class="img-fluid rounded-5 shadow-lg" alt="Preparation">
-                </div>
-                <div class="col-lg-6 ps-lg-5 text-primary">
-                    <h6 class="text-secondary fw-bold text-uppercase mb-2">Guidance</h6>
-                    <h2 class="display-5 fw-bold mb-4">How to Prepare for Your Session</h2>
-                    <p class="mb-4">To get the most out of your spiritual encounter, we recommend a few simple steps to center your energy and open your heart to the messages ahead.</p>
-                    <div class="accordion" id="prepAccordion">
-                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                    Set Your Intentions
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#prepAccordion">
-                                <div class="accordion-body text-muted">
-                                    Before the session, take 5 minutes to write down 1-3 specific questions or areas of your life you'd like focus on. Intentionality acts as a beacon for spiritual guidance.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                    Find a Sacred Space
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#prepAccordion">
-                                <div class="accordion-body text-muted">
-                                    Choose a quiet, comfortable location where you won't be interrupted. Light a candle or incense if it helps you feel grounded.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 rounded shadow-sm">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                    Hydrate and Ground
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#prepAccordion">
-                                <div class="accordion-body text-muted">
-                                    Drink plenty of water before and after session. Energetic work can be physically taxing, and water helps facilitate the flow of insight.
-                                </div>
+                            <div class="service-card-footer">
+                                <h5 class="text-secondary fw-bold mb-0 text-secondary">$65.00</h5>
+                                <a href="contact.html?service=booking" class="btn btn-primary btn-sm px-4">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -332,79 +139,39 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container text-center text-md-start">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                    <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                        <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" class="me-2" style="border-radius:50%;">
                         <h4 class="fw-bold mb-0">Celestial Tarot</h4>
                     </div>
-                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom and sacred tools. Join our community of seekers.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#"><i class="bi bi-youtube fs-4"></i></a>
-                    </div>
+                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom.</p>
                 </div>
                 <div class="col-md-2">
                     <h6 class="fw-bold mb-4">Company</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html#about">About Us</a></li>
-                        <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="index.html#shop">Shop</a></li>
-                        <li class="mb-2"><a href="#">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
-                    <h6 class="fw-bold mb-4">Support</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Contact</a></li>
-                        <li class="mb-2"><a href="#">FAQ</a></li>
-                        <li class="mb-2"><a href="#">Shipping</a></li>
-                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-4">Subscribe to Guidance</h6>
-                    <p class="small opacity-75">Receive moon phase alerts and exclusive energy forecasts.</p>
-                    <form class="mt-3">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                            <button class="btn btn-secondary text-primary fw-bold" type="button">Join</button>
-                        </div>
-                    </form>
+                <div class="col-md-4 ms-auto text-center">
+                    <h6 class="fw-bold mb-4">Stay Connected</h6>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <a href="#"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-3"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-3"></i></a>
+                    </div>
                 </div>
             </div>
             <hr class="mt-5 mb-4 opacity-10">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; 2026 Celestial Tarot. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <p class="small mb-0">Designed with <i class="bi bi-heart-fill text-danger mx-1"></i> for Spiritual Seekers</p>
-                </div>
-            </div>
+            <p class="small mb-0 text-center opacity-50">&copy; 2026 Celestial Tarot. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Back to top -->
-    <div id="back-to-top" class="back-to-top">
-        <i class="bi bi-arrow-up"></i>
-    </div>
-
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
-    <script>
-        // Specific toggle for desktop (sync with main.js logic)
-        const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
-        if (themeToggleDesktop) {
-            themeToggleDesktop.addEventListener('click', () => {
-                document.getElementById('theme-toggle').click();
-            });
-        }
-    </script>
 </body>
 </html>

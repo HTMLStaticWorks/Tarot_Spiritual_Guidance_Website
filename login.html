@@ -12,31 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-<body class="bg-dark">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="auth-bg">
 
-    <div class="theme-rtl-controls position-fixed top-0 end-0 m-4 d-flex gap-3" style="z-index: 1000;">
-        <div class="theme-toggle" id="theme-toggle">
-            <i class="bi bi-moon-stars-fill text-white"></i>
+    <div class="auth-controls">
+        <div class="theme-toggle" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
         </div>
-        <div class="rtl-toggle" id="rtl-toggle" onclick="document.documentElement.dir = document.documentElement.dir === 'rtl' ? 'ltr' : 'rtl'">
-            <i class="bi bi-translate text-white"></i>
+        <div class="rtl-toggle" title="Toggle RTL">
+            <i class="bi bi-translate"></i>
         </div>
     </div>
 
-    <div class="auth-container d-flex align-items-center justify-content-center py-5" style="min-height: 100vh;">
-        <div class="auth-card card p-4 p-md-5 border-0 shadow-lg" style="max-width: 500px; width: 100%;">
-            <div class="text-center mb-4">
-                <i class="bi bi-stars fs-1 text-primary"></i>
-                <h2 class="fw-bold text-primary mt-2">Celestial Guidance</h2>
-                <h4 class="fw-bold mt-4">Welcome Back</h4>
+    <div class="container d-flex align-items-center justify-content-center py-5">
+        <div class="auth-card">
+            <div class="text-center mb-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center gap-2 mb-4">
+                    <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="45" height="45" style="border-radius:50%;">
+                    <h2 class="fw-bold mb-0">Celestial Tarot</h2>
+                </a>
+                <h4 class="fw-bold mt-2">Welcome Back</h4>
+                <p class="text-muted small">Realign with your celestial path.</p>
             </div>
 
             <form action="dashboard.html">
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label fw-bold">Email Address</label>
                     <input type="email" class="form-control" placeholder="name@example.com" required>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                     <label class="form-label fw-bold">Password</label>
                     <div class="password-wrapper">
                         <input type="password" class="form-control" id="password" placeholder="••••••••" required>
@@ -46,51 +52,34 @@
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label small" for="remember">Remember Me</label>
+                        <label class="form-check-label small opacity-75" for="remember">Remember Me</label>
                     </div>
-                    <a href="#" class="small text-decoration-none fw-bold text-primary">Forgot Password?</a>
+                    <a href="#" class="small text-decoration-none fw-bold text-secondary">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn btn-primary w-100 py-3 mb-4">Login</button>
+                <button type="submit" class="btn btn-primary w-100 py-3 mb-4 shadow">Login</button>
             </form>
 
-            <div class="text-center mb-4 position-relative">
-                <hr>
-                <span class="position-absolute top-50 start-50 translate-middle px-3 bg-white text-muted small">Or login with</span>
+            <div class="auth-divider">
+                <span>Or login with</span>
             </div>
 
             <div class="row g-3">
                 <div class="col-6">
-                    <button class="btn btn-secondary w-100"><i class="bi bi-google me-2"></i>Google</button>
+                    <button class="btn btn-outline-primary bg-white w-100"><i class="bi bi-google me-2"></i>Google</button>
                 </div>
                 <div class="col-6">
-                    <button class="btn btn-secondary w-100"><i class="bi bi-apple me-2"></i>Apple</button>
+                    <button class="btn btn-outline-primary bg-white w-100"><i class="bi bi-apple me-2"></i>Apple</button>
                 </div>
             </div>
 
-            <p class="text-center mt-4 mb-0">
-                New seeker? <a href="signup.html" class="fw-bold text-decoration-none text-primary">Explore Options</a>
+            <p class="text-center mt-5 mb-0 opacity-75">
+                New seeker? <a href="signup.html" class="fw-bold text-decoration-none text-secondary">Explore Options</a>
             </p>
         </div>
-    </div>
-
-    <!-- Theme Toggle -->
-    <div class="theme-toggle position-fixed top-0 end-0 m-4" id="theme-toggle" style="cursor: pointer; z-index: 100;">
-        <i class="bi bi-moon-stars-fill text-white fs-4"></i>
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        // Adjust labels based on theme
-        const observer = new MutationObserver(() => {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            const label = document.getElementById('or-label');
-            if (label) {
-                label.style.backgroundColor = isDark ? '#2D0B5A' : '#ffffff';
-            }
-        });
-        observer.observe(document.documentElement, { attributes: true });
-    </script>
 </body>
 </html>

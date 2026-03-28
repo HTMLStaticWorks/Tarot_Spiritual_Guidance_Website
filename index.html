@@ -21,8 +21,8 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/img/favicon.svg" alt="Celestial Guidance" width="34" height="34" style="border-radius:50%;">
-                <span class="fw-bold">Celestial Guidance</span>
+                <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" style="border-radius:50%;">
+                <span class="fw-bold">Celestial Tarot</span>
             </a>
             
             <div class="d-flex align-items-center d-lg-none">
@@ -42,7 +42,7 @@
                         </a>
                         <ul class="dropdown-menu border-0 shadow-sm glass-card">
                             <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Premium Version</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -51,6 +51,9 @@
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
+                    <div class="rtl-toggle me-3 d-none d-lg-block" onclick="document.documentElement.dir = document.documentElement.dir === 'rtl' ? 'ltr' : 'rtl'" title="Toggle RTL">
+                        <i class="bi bi-translate text-secondary"></i>
+                    </div>
                     <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
@@ -95,11 +98,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 animate-fade-in">
                     <span class="badge bg-secondary text-primary mb-3 px-3 py-2 rounded-pill fw-bold">Connect with the Cosmos</span>
-                    <h1 class="display-1 fw-bold mb-4">Unlock Your <span class="text-secondary">Destiny</span> with Celestial Guidance</h1>
+                    <h1 class="display-1 fw-bold mb-4">Unlock Your <span class="text-secondary">Destiny</span> with Celestial Tarot</h1>
                     <p class="lead mb-5 opacity-75">Embark on a mystical journey of self-discovery through personalized tarot readings and spiritual tools crafted for your soul's growth.</p>
-                    <div class="d-flex justify-content-center gap-3">
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
                         <a href="services.html" class="btn btn-primary btn-lg px-5">Get Started</a>
-                        <a href="#about" class="btn btn-secondary btn-lg px-5">Our Story</a>
+                        <a href="about.html" class="btn btn-secondary btn-lg px-5">Our Story</a>
                     </div>
                 </div>
             </div>
@@ -117,11 +120,11 @@
                         <p class="small mb-0">of Spiritual Wisdom</p>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
+                <div class="col-lg-6 ps-lg-5 text-center text-lg-start">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">Our Mission</h6>
                     <h2 class="display-5 fw-bold mb-4 text-primary">A Sanctuary for Spiritual Seekers</h2>
                     <p class="mb-4">Celestial Tarot is born from a desire to bridge the gap between ancient wisdom and modern living. We provide a calming, inclusive space for you to explore your spiritual path, find clarity in transitions, and connect with your inner truth.</p>
-                    <div class="row g-4 mb-4">
+                    <div class="row g-4 mb-4 text-start">
                         <div class="col-6">
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-patch-check-fill text-secondary fs-3 me-3"></i>
@@ -135,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                    <a href="about.html" class="btn btn-primary btn-lg px-4">Learn More About Us</a>
                 </div>
             </div>
         </div>
@@ -181,27 +184,33 @@
             <h2 class="display-5 fw-bold mb-5">Core Offerings</h2>
             <div class="row g-4 text-start">
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card">
-                        <i class="bi bi-journal-text fs-1 text-secondary mb-3"></i>
-                        <h4 class="fw-bold">Intuitive Tarot</h4>
-                        <p class="opacity-75">Connect with your subconscious through card archetypes and intuitive hits.</p>
-                        <a href="services.html" class="text-primary fw-bold text-decoration-none mt-auto">Book Now <i class="bi bi-arrow-right"></i></a>
+                    <div class="card offering-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&fm=jpg&fit=crop" alt="Intuitive Tarot">
+                        <div class="offering-card-body">
+                            <h4 class="fw-bold">Intuitive Tarot</h4>
+                            <p class="opacity-75">Connect with your subconscious through card archetypes and intuitive hits.</p>
+                            <a href="services.html" class="service-card-link">Book Now <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card">
-                        <i class="bi bi-lightning-charge fs-1 text-secondary mb-3"></i>
-                        <h4 class="fw-bold">Energy Healing</h4>
-                        <p class="opacity-75">Restore balance and harmony to your aura with remote reiki and healing.</p>
-                        <a href="services.html" class="text-primary fw-bold text-decoration-none mt-auto">Explore <i class="bi bi-arrow-right"></i></a>
+                    <div class="card offering-card">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=600&fm=jpg&fit=crop" alt="Energy Healing">
+                        <div class="offering-card-body">
+                            <h4 class="fw-bold">Energy Healing</h4>
+                            <p class="opacity-75">Restore balance and harmony to your aura with remote reiki and healing.</p>
+                            <a href="services.html" class="service-card-link">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm glass-card">
-                        <i class="bi bi-moon fs-1 text-secondary mb-3"></i>
-                        <h4 class="fw-bold">Lunar Guides</h4>
-                        <p class="opacity-75">Align your actions with moon phases for optimal growth and manifestation.</p>
-                        <a href="services.html" class="text-primary fw-bold text-decoration-none mt-auto">View Guides <i class="bi bi-arrow-right"></i></a>
+                    <div class="card offering-card">
+                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=600&fm=jpg&fit=crop" alt="Lunar Guides">
+                        <div class="offering-card-body">
+                            <h4 class="fw-bold">Lunar Guides</h4>
+                            <p class="opacity-75">Align your actions with moon phases for optimal growth and manifestation.</p>
+                            <a href="services.html" class="service-card-link">View Guides <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -259,19 +268,16 @@
     <!-- Quick Tool -->
     <section class="section-padding">
         <div class="container">
-            <div class="card bg-primary text-white border-0 rounded-5 overflow-hidden shadow-lg position-relative">
+            <div class="card guidance-section border-0 shadow-lg position-relative">
                 <div class="p-5" style="position: relative; z-index: 2;">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7">
-                            <h2 class="display-5 fw-bold mb-3">Daily Soul Message</h2>
-                            <p class="lead mb-4 opacity-75">Take a breath, center your energy, and click below to reveal the card the universe has chosen for you today.</p>
-                            <button class="btn btn-secondary btn-lg px-5 text-primary border-0 shadow fw-bold">Draw Your Card</button>
-                        </div>
-                        <div class="col-lg-5 text-center mt-5 mt-lg-0">
-                            <div class="p-5 border border-secondary border-dashed rounded-4 bg-white bg-opacity-10">
-                                <i class="bi bi-stars display-1 text-secondary opacity-50 pulse-animation"></i>
-                                <p class="mt-3">Card face-down</p>
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-12">
+                            <h2 class="display-5 fw-bold mb-3">Today's Guidance</h2>
+                            <p class="lead mb-5 opacity-75">Take a breath, center your energy, and click below to reveal the card the universe has chosen for you today.</p>
+                            <div class="mb-5">
+                                <img src="https://images.unsplash.com/photo-1542127201395-535359b85c2c?q=80&w=800&fm=jpg&fit=crop" class="img-fluid rounded-4 shadow-sm" alt="Today's Guidance" style="max-height: 400px; width: auto;">
                             </div>
+                            <button class="btn btn-secondary btn-lg px-5 text-primary border-0 shadow fw-bold">Draw Your Card</button>
                         </div>
                     </div>
                 </div>
@@ -288,33 +294,33 @@
             </div>
             <div class="row g-4 text-primary">
                 <div class="col-md-4">
-                    <div class="card p-4 h-100 text-center border-0 shadow-sm glass-card">
+                    <div class="card testimonial-card p-4 h-100 text-center border-0 shadow-sm glass-card">
                         <div class="mb-3 text-secondary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p class="fst-italic opacity-75">"The reading I received was incredibly accurate and gave me the peace of mind I desperately needed. Highly recommended!"</p>
-                        <h6 class="fw-bold mt-3 mb-0">Sarah J.</h6>
-                        <span class="small opacity-50">Verified Seeker</span>
+                        <h6 class="reviewer-name mt-3 mb-0 text-primary">Sarah J.</h6>
+                        <span class="small opacity-50 text-muted">Verified Seeker</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-4 h-100 text-center border-0 shadow-sm glass-card">
+                    <div class="card testimonial-card p-4 h-100 text-center border-0 shadow-sm glass-card">
                         <div class="mb-3 text-secondary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p class="fst-italic opacity-75">"The lunar guides have become a cornerstone of my monthly practice. They bring so much clarity and intention."</p>
-                        <h6 class="fw-bold mt-3 mb-0">Michael D.</h6>
-                        <span class="small opacity-50">Ritual Member</span>
+                        <h6 class="reviewer-name mt-3 mb-0 text-primary">Michael D.</h6>
+                        <span class="small opacity-50 text-muted">Ritual Member</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card p-4 h-100 text-center border-0 shadow-sm glass-card">
+                    <div class="card testimonial-card p-4 h-100 text-center border-0 shadow-sm glass-card">
                         <div class="mb-3 text-secondary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p class="fst-italic opacity-75">"Beautiful spiritual tools and even more beautiful guidance. This site is a true gem for anyone on a spiritual path."</p>
-                        <h6 class="fw-bold mt-3 mb-0">Elena R.</h6>
-                        <span class="small opacity-50">Healer</span>
+                        <h6 class="reviewer-name mt-3 mb-0 text-primary">Elena R.</h6>
+                        <span class="small opacity-50 text-muted">Healer</span>
                     </div>
                 </div>
             </div>
@@ -369,7 +375,7 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                        <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" class="me-2" style="border-radius:50%;">
                         <h4 class="fw-bold mb-0">Celestial Tarot</h4>
                     </div>
                     <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom and sacred tools. Join our community of seekers.</p>
@@ -380,29 +386,29 @@
                         <a href="#"><i class="bi bi-youtube fs-4"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center text-md-start">
                     <h6 class="fw-bold mb-4">Company</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#about">About Us</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
                         <li class="mb-2"><a href="services.html">Services</a></li>
-                        <li class="mb-2"><a href="#shop">Shop</a></li>
-                        <li class="mb-2"><a href="#">Blog</a></li>
+                        <li class="mb-2"><a href="shop.html">Shop</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center text-md-start">
                     <h6 class="fw-bold mb-4">Support</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Contact</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
                         <li class="mb-2"><a href="#">FAQ</a></li>
                         <li class="mb-2"><a href="#">Shipping</a></li>
                         <li class="mb-2"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 text-center text-lg-start">
                     <h6 class="fw-bold mb-4">Subscribe to Guidance</h6>
                     <p class="small opacity-75">Receive moon phase alerts and exclusive energy forecasts.</p>
                     <form class="mt-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 mx-auto mx-lg-0" style="max-width: 350px;">
                             <input type="email" class="form-control" placeholder="Your Email">
                             <button class="btn btn-secondary text-primary fw-bold" type="button">Join</button>
                         </div>

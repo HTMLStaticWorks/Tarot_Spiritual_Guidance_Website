@@ -1,42 +1,75 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Toggle Logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlElement = document.documentElement;
-    const bodyIcon = document.querySelector('#theme-toggle i');
+    const html = document.documentElement;
 
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    htmlElement.setAttribute('data-theme', currentTheme);
-    updateThemeIcon(currentTheme);
+    // =====================
+    // THEME TOGGLE
+    // =====================
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+    updateAllThemeIcons(savedTheme);
 
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            let theme = htmlElement.getAttribute('data-theme');
-            let newTheme = theme === 'light' ? 'dark' : 'light';
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateAllThemeIcons(next);
+        });
+    });
+
+    function updateAllThemeIcons(theme) {
+        document.querySelectorAll('.theme-toggle i').forEach(icon => {
+            icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
         });
     }
 
-    function updateThemeIcon(theme) {
-        if (bodyIcon) {
-            bodyIcon.className = theme === 'light' ? 'bi bi-moon-stars-fill' : 'bi bi-sun-fill';
-        }
-    }
+    // =====================
+    // RTL TOGGLE
+    // =====================
+    const savedDir = localStorage.getItem('dir') || 'ltr';
+    html.setAttribute('dir', savedDir);
+    updateRtlIcons(savedDir);
 
-    // Back to Top Logic
-    const backToTop = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTop.style.display = 'flex';
-        } else {
-            backToTop.style.display = 'none';
-        }
+    document.querySelectorAll('.rtl-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const current = html.getAttribute('dir') || 'ltr';
+            const next = current === 'ltr' ? 'rtl' : 'ltr';
+            html.setAttribute('dir', next);
+            localStorage.setItem('dir', next);
+            updateRtlIcons(next);
+        });
     });
 
+    function updateRtlIcons(dir) {
+        document.querySelectorAll('.rtl-toggle i').forEach(icon => {
+            icon.className = dir === 'rtl' ? 'bi bi-align-start' : 'bi bi-translate';
+        });
+    }
+
+    // =====================
+    // BACK TO TOP
+    // =====================
+    const backToTop = document.getElementById('back-to-top');
     if (backToTop) {
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
+        });
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // =====================
+    // AUTH CARD DIVIDER BG SYNC
+    // =====================
+    function syncDividerBg() {
+        const isDark = html.getAttribute('data-theme') === 'dark';
+        document.querySelectorAll('.auth-divider span').forEach(el => {
+            el.style.backgroundColor = isDark ? '#1A0836' : '#ffffff';
+        });
+    }
+    syncDividerBg();
+    const themeObserver = new MutationObserver(syncDividerBg);
+    themeObserver.observe(html, { attributes: true });
 });

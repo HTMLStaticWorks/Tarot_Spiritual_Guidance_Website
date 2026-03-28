@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Celestial Guidance</title>
+    <title>Contact Us | Celestial Tarot</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
 <body>
 
     <!-- Header / Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <i class="bi bi-stars me-2 fs-3 text-secondary"></i>
-                <span class="fw-bold">Celestial Guidance</span>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" style="border-radius:50%;">
+                <span class="fw-bold">Celestial Tarot</span>
             </a>
             
             <div class="d-flex align-items-center d-lg-none">
@@ -40,7 +42,7 @@
                         </a>
                         <ul class="dropdown-menu border-0 shadow-sm glass-card">
                             <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Premium Version</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -49,6 +51,9 @@
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
+                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                        <i class="bi bi-translate text-secondary"></i>
+                    </div>
                     <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
@@ -59,16 +64,17 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="section-padding bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-3 fw-bold">Contact the Cosmos</h1>
-            <p class="lead opacity-75">Seek clarity, share your journey, or simply reach out. We are here to guide you.</p>
+    <header class="hero-section py-5 text-center" style="min-height: auto;">
+        <div class="container py-4">
+            <h6 class="text-secondary fw-bold text-uppercase mb-2">Connect</h6>
+            <h1 class="display-4 fw-bold">Contact the Cosmos</h1>
+            <p class="lead mb-0 opacity-75">Seek clarity, share your journey, or simply reach out. We are here to guide you.</p>
         </div>
     </header>
 
     <!-- Contact Content -->
     <section class="section-padding">
-        <div class="container">
+        <div class="container border-0">
             <div class="row g-5">
                 <!-- Info Section -->
                 <div class="col-lg-5">
@@ -82,7 +88,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-1">Sanctuary Location</h6>
-                                <p class="mb-0 text-muted">777 Celestial Way, Astra City, AC 444</p>
+                                <p class="mb-0 text-muted small">777 Celestial Way, Astra City, AC 444</p>
                             </div>
                         </div>
 
@@ -91,8 +97,8 @@
                                 <i class="bi bi-envelope fs-4 text-primary"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold mb-1">Divine Email</h6>
-                                <p class="mb-0 text-muted">hello@celestialguidance.com</p>
+                                <h6 class="fw-bold mb-1 text-primary">Divine Email</h6>
+                                <p class="mb-0 text-muted small">hello@celestialguidance.com</p>
                             </div>
                         </div>
 
@@ -101,13 +107,13 @@
                                 <i class="bi bi-chat-dots fs-4 text-primary"></i>
                             </div>
                             <div>
-                                <h6 class="fw-bold mb-1">Live Guidance</h6>
-                                <p class="mb-0 text-muted">Mon-Fri: 10am - 6pm (EST)</p>
+                                <h6 class="fw-bold mb-1 text-primary">Live Guidance</h6>
+                                <p class="mb-0 text-muted small">Mon-Fri: 10am - 6pm (EST)</p>
                             </div>
                         </div>
 
-                        <div class="card bg-light border-0 rounded-4 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=800&fm=jpg&fit=crop" class="card-img-top" alt="Customer Support">
+                        <div class="card bg-light border-0 rounded-4 shadow-sm overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&fm=jpg&fit=crop" class="card-img-top" alt="Customer Support">
                             <div class="card-body p-4 text-center">
                                 <p class="small mb-0 text-muted fst-italic">"We respond to all inquiries within 24 cosmic hours."</p>
                             </div>
@@ -123,15 +129,15 @@
                             <div class="row g-3">
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold">Full Name</label>
-                                    <input type="text" class="form-control py-3" placeholder="Jane Doe" required>
+                                    <input type="text" class="form-control" placeholder="Jane Doe" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold">Email Address</label>
-                                    <input type="email" class="form-control py-3" placeholder="jane@example.com" required>
+                                    <input type="email" class="form-control" placeholder="jane@example.com" required>
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label class="form-label fw-bold">Topic of Guidance</label>
-                                    <select class="form-select py-3">
+                                    <select class="form-select">
                                         <option selected>General Inquiry</option>
                                         <option>Tarot Session Feedback</option>
                                         <option>Energy Healing Coordination</option>
@@ -144,7 +150,7 @@
                                     <textarea class="form-control" rows="6" placeholder="How can the universe assist you today?" required></textarea>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3 w-100">Deliver My Message</button>
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3 w-100 shadow">Deliver My Message</button>
                                 </div>
                             </div>
                         </form>
@@ -154,28 +160,27 @@
         </div>
     </section>
 
-    <!-- Map/Visual Section -->
-    <section class="section-padding py-0">
-        <div class="container-fluid p-0">
-            <div style="height: 400px; background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2000&fm=jpg&fit=crop') center/cover;">
-                <!-- Decorative map overlay or visual -->
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer mt-0">
+    <footer class="footer">
         <div class="container">
             <div class="row g-4 text-center text-md-start">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
                         <i class="bi bi-stars fs-3 text-secondary me-2"></i>
-                        <h4 class="fw-bold mb-0 text-white">Celestial Guidance</h4>
+                        <h4 class="fw-bold mb-0">Celestial Tarot</h4>
                     </div>
-                    <p class="opacity-75 mb-4 text-white">Empowering souls through intuitive wisdom. Join our community seekers.</p>
+                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom.</p>
+                </div>
+                <div class="col-md-2 text-center text-md-start">
+                    <h6 class="fw-bold mb-4">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-4 ms-auto text-center">
-                    <h6 class="fw-bold mb-4 text-white">Stay Connected</h6>
+                    <h6 class="fw-bold mb-4">Stay Connected</h6>
                     <div class="d-flex gap-4 justify-content-center">
                         <a href="#"><i class="bi bi-instagram fs-3"></i></a>
                         <a href="#"><i class="bi bi-twitter fs-3"></i></a>
@@ -184,9 +189,14 @@
                 </div>
             </div>
             <hr class="mt-5 mb-4 opacity-10">
-            <p class="small mb-0 text-center text-white text-opacity-50">&copy; 2026 Celestial Guidance. All rights reserved.</p>
+            <p class="small mb-0 text-center opacity-50">&copy; 2026 Celestial Tarot. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

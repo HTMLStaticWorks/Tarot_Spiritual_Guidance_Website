@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrology & Energy | Celestial Guidance</title>
+    <title>Astrology & Energy | Celestial Tarot</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -30,8 +30,8 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/img/favicon.svg" alt="Celestial Guidance" width="34" height="34" style="border-radius:50%;">
-                <span class="fw-bold">Celestial Guidance</span>
+                <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" style="border-radius:50%;">
+                <span class="fw-bold">Celestial Tarot</span>
             </a>
             
             <div class="d-flex align-items-center d-lg-none">
@@ -51,7 +51,7 @@
                         </a>
                         <ul class="dropdown-menu border-0 shadow-sm glass-card">
                             <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Premium Version</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -60,6 +60,9 @@
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
+                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                        <i class="bi bi-translate text-secondary"></i>
+                    </div>
                     <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
@@ -286,29 +289,33 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-stars fs-3 text-secondary me-2"></i>
+                        <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" class="me-2" style="border-radius:50%;">
                         <h4 class="fw-bold mb-0 text-white">Celestial Tarot</h4>
                     </div>
                     <p class="opacity-75 mb-4 text-white">Empowering souls to find their path through intuitive wisdom and sacred tools.</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center text-md-start">
                     <h6 class="fw-bold mb-4 text-white">Company</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html#about" class="text-white text-opacity-75">About Us</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-opacity-75">About Us</a></li>
                         <li class="mb-2"><a href="services.html" class="text-white text-opacity-75">Services</a></li>
+                        <li class="mb-2"><a href="shop.html" class="text-white text-opacity-75">Shop</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-opacity-75">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 text-white">
-                    <h6 class="fw-bold mb-4">Cosmic Links</h6>
+                <div class="col-md-2 text-center text-md-start">
+                    <h6 class="fw-bold mb-4 text-white">Support</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#celestial-events" class="text-white text-opacity-75">Events</a></li>
-                        <li class="mb-2"><a href="#zodiac" class="text-white text-opacity-75">Calculators</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-opacity-75">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-opacity-75">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-opacity-75">Shipping</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-opacity-75">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 text-white">
+                <div class="col-lg-4 text-center text-lg-start text-white">
                     <h6 class="fw-bold mb-4">Astral Alerts</h6>
                     <form class="mt-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 mx-auto mx-lg-0" style="max-width: 350px;">
                             <input type="email" class="form-control" placeholder="Your Email">
                             <button class="btn btn-secondary text-primary fw-bold" type="button">Subscribe</button>
                         </div>
