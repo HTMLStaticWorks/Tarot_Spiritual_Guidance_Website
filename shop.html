@@ -29,9 +29,6 @@
                 <div class="theme-toggle me-3" id="theme-toggle">
                     <i class="bi bi-moon-stars-fill text-secondary"></i>
                 </div>
-                <div class="theme-toggle me-3 ms-2">
-                    <i class="bi bi-cart3 text-secondary"></i>
-                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,25 +36,20 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-sm glass-card">
-                            <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                    <div class="rtl-toggle me-3 d-none d-lg-flex" title="Toggle RTL">
                         <i class="bi bi-translate text-secondary"></i>
                     </div>
-                    <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
+                    <div class="theme-toggle me-4 d-none d-lg-flex" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
                     <div class="me-4 position-relative cursor-pointer d-none d-lg-block">
@@ -69,6 +61,29 @@
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2 mt-4">
+                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Page Header -->
     <section class="hero-section py-5 text-center" style="min-height: auto;">
@@ -111,7 +126,7 @@
                         <!-- Product 1 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1590076215667-873d3950b7fd?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Celestial Deck">
+                                <img src="https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?q=80&w=400&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Celestial Tarot Deck" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Celestial Tarot Deck</h5>
                                     <p class="small text-muted mb-3">Limited Edition Gold-Foil</p>
@@ -123,7 +138,7 @@
                         <!-- Product 2 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1623126315266-410a5682eec4?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Amethyst Cluster">
+                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Deep Amethyst Cluster" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Deep Amethyst Cluster</h5>
                                     <p class="small text-muted mb-3">High-Vibe Brazil sourced</p>
@@ -135,7 +150,7 @@
                         <!-- Product 3 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1542127201395-535359b85c2c?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Full Moon Ritual Kit">
+                                <img src="https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?q=80&w=400&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Lunar Manifestation Kit" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Lunar Ritual Kit</h5>
                                     <p class="small text-muted mb-3">Complete manifesting tools</p>
@@ -147,7 +162,7 @@
                         <!-- Product 4 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Sage Wand">
+                                <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=600&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Organic Cleansing Sage" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Organic White Sage</h5>
                                     <p class="small text-muted mb-3">Sustainably harvested</p>
@@ -159,7 +174,7 @@
                         <!-- Product 5 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Incense Burner">
+                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=600&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Handcrafted Ritual Burner" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Moon-Phase Burner</h5>
                                     <p class="small text-muted mb-3">Handcrafted ceramic</p>
@@ -171,7 +186,7 @@
                         <!-- Product 6 -->
                         <div class="col-md-4 col-sm-6">
                             <div class="card h-100 border-0 shadow-sm overflow-hidden text-primary">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&fm=jpg&fit=crop" class="card-img-top" alt="Aura Spray">
+                                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=600&fm=jpg&fit=crop" class="card-img-top hover-zoom" alt="Sacred Aura Protection Mist" style="height: 200px; object-fit: cover;">
                                 <div class="card-body p-4 text-center">
                                     <h5 class="fw-bold">Protection Aura Spray</h5>
                                     <p class="small text-muted mb-3">Palo Santo & Lavender</p>

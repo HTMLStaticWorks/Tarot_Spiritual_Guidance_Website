@@ -18,8 +18,8 @@
         .dashboard-wrapper { display: flex; min-height: 100vh; }
         .sidebar {
             width: 260px;
-            background: var(--primary-color);
-            color: #fff;
+            background: #2D0B5A;
+            color: #E0C097;
             padding: 24px 0;
             display: flex;
             flex-direction: column;
@@ -28,15 +28,33 @@
         .main-content { flex: 1; padding: 32px; background: var(--bg-color); }
         
         .sidebar .nav-link { 
-            color: rgba(255,255,255,0.7) !important; 
+            color: rgba(224, 192, 151, 0.7) !important; 
             padding: 12px 24px;
             margin: 2px 14px;
             border-radius: 8px;
+            transition: var(--transition);
         }
         .sidebar .nav-link.active, .sidebar .nav-link:hover {
-            background: var(--secondary-color);
-            color: var(--primary-color) !important;
+            background: #E0C097;
+            color: #2D0B5A !important;
         }
+        .sidebar .btn-outline-light {
+            color: rgba(224, 192, 151, 0.7) !important;
+            background: rgba(224, 192, 151, 0.05) !important;
+        }
+        .sidebar .btn-outline-light:hover {
+            color: #E0C097 !important;
+            background: rgba(224, 192, 151, 0.15) !important;
+        }
+        
+        .sidebar-logo-text { color: #E0C097; }
+        .sidebar-upgrade-card { background: rgba(224, 192, 151, 0.08) !important; color: #E0C097; }
+
+        .table { --bs-table-bg: transparent; background-color: transparent !important; }
+        .table th, .table td { background-color: transparent !important; border-color: rgba(45, 11, 90, 0.1); }
+        [data-theme="dark"] .table th, [data-theme="dark"] .table td { border-color: rgba(224, 192, 151, 0.15); color: #FAF9F6 !important; }
+        [data-theme="dark"] .table thead th { color: rgba(250, 249, 246, 0.6) !important; }
+        [data-theme="dark"] .text-primary { color: #FAF9F6 !important; }
 
         @media (max-width: 991.98px) {
             .sidebar { width: 0; padding: 0; overflow: hidden; opacity: 0; }
@@ -51,7 +69,7 @@
         <aside class="sidebar shadow" id="sidebar">
             <div class="px-4 mb-5 d-flex align-items-center gap-2">
                 <img src="assets/img/favicon.svg" alt="Logo" width="32" height="32" style="border-radius:50%;">
-                <h4 class="fw-bold mb-0">Celestial</h4>
+                <h4 class="fw-bold mb-0 sidebar-logo-text">Celestial</h4>
             </div>
             <nav class="nav flex-column">
                 <a href="index.html" class="nav-link"><i class="bi bi-house-door me-2"></i> Home</a>
@@ -62,11 +80,11 @@
                 <a href="contact.html" class="nav-link"><i class="bi bi-envelope me-2"></i> Contact</a>
             </nav>
             <div class="mt-auto px-14 py-4" style="padding: 0 14px;">
-                <div class="glass-card p-3 rounded-4 bg-white bg-opacity-10 text-center">
+                <div class="p-3 rounded-4 sidebar-upgrade-card text-center border-0">
                     <p class="small mb-2 opacity-75">Upgrade to Luminary</p>
-                    <button class="btn btn-secondary btn-sm w-100 text-primary fw-bold">Upgrade</button>
+                    <button class="btn btn-sm w-100 fw-bold" style="background: #E0C097; color: #2D0B5A;">Upgrade</button>
                 </div>
-                <a href="login.html" class="btn btn-outline-light btn-sm w-100 mt-3 border-0 opacity-75">Log Out</a>
+                <a href="login.html" class="btn btn-outline-light btn-sm w-100 mt-3 border-0">Log Out</a>
             </div>
         </aside>
 

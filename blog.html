@@ -29,32 +29,28 @@
                 <div class="theme-toggle me-3" id="theme-toggle">
                     <i class="bi bi-moon-stars-fill text-secondary"></i>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <!-- Corrected Hamburger for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-sm glass-card">
-                            <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                    <div class="rtl-toggle me-3 d-none d-lg-flex" title="Toggle RTL">
                         <i class="bi bi-translate text-secondary"></i>
                     </div>
-                    <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
+                    <div class="theme-toggle me-4 d-none d-lg-flex" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
                     <a href="signup.html" class="btn btn-primary">Join Now</a>
@@ -62,6 +58,29 @@
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2 mt-4">
+                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Page Header -->
     <header class="hero-section py-5 text-center" style="min-height: auto;">
@@ -78,35 +97,41 @@
             <div class="row g-4">
                 <!-- Post 1 -->
                 <div class="col-md-4">
-                    <article class="h-100">
-                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1542127201395-535359b85c2c?q=80&w=600&fm=jpg&fit=crop" class="img-fluid hover-zoom" alt="Blog">
+                    <article class="h-100 d-flex flex-column">
+                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm" style="height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1528319725582-ddc096101511?q=80&w=800&fm=jpg&fit=crop" class="img-fluid hover-zoom w-100 h-100" style="object-fit: cover;" alt="Sacred Rituals">
                         </div>
-                        <span class="text-secondary small fw-bold">Rituals • March 24, 2026</span>
-                        <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">How to Cleanse Your Sacred Space</a></h4>
-                        <p class="text-muted small">A beginner's guide to using sage, palo santo, and sound for energy clearing.</p>
+                        <div class="flex-grow-1">
+                            <span class="text-secondary small fw-bold">Rituals • March 24, 2026</span>
+                            <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">How to Cleanse Your Sacred Space</a></h4>
+                            <p class="text-muted small">A beginner's guide to using sage, palo santo, and sound for energy clearing.</p>
+                        </div>
                     </article>
                 </div>
                 <!-- Post 2 -->
                 <div class="col-md-4">
-                    <article class="h-100">
-                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?q=80&w=600&fm=jpg&fit=crop" class="img-fluid hover-zoom" alt="Blog">
+                    <article class="h-100 d-flex flex-column">
+                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm" style="height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=800&fm=jpg&fit=crop" class="img-fluid hover-zoom w-100 h-100" style="object-fit: cover;" alt="Astrology Insights">
                         </div>
-                        <span class="text-secondary small fw-bold">Astrology • March 20, 2026</span>
-                        <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">Navigating the Spring Equinox Shift</a></h4>
-                        <p class="text-muted small">Understand the cardinal energy and what the shift in seasons means for your growth.</p>
+                        <div class="flex-grow-1">
+                            <span class="text-secondary small fw-bold">Astrology • March 20, 2026</span>
+                            <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">Navigating the Spring Equinox Shift</a></h4>
+                            <p class="text-muted small">Understand the cardinal energy and what the shift in seasons means for your growth.</p>
+                        </div>
                     </article>
                 </div>
                 <!-- Post 3 -->
                 <div class="col-md-4">
-                    <article class="h-100">
-                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=600&fm=jpg&fit=crop" class="img-fluid hover-zoom" alt="Blog">
+                    <article class="h-100 d-flex flex-column">
+                        <div class="mb-3 overflow-hidden rounded-4 shadow-sm" style="height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=800&fm=jpg&fit=crop" class="img-fluid hover-zoom w-100 h-100" style="object-fit: cover;" alt="Tarot Insights">
                         </div>
-                        <span class="text-secondary small fw-bold">Tarot • March 15, 2026</span>
-                        <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">The Fool's Journey Deep Dive</a></h4>
-                        <p class="text-muted small">A deep dive into the Major Arcana and the archetypal transition of the first card.</p>
+                        <div class="flex-grow-1">
+                            <span class="text-secondary small fw-bold">Tarot • March 15, 2026</span>
+                            <h4 class="fw-bold mt-2"><a href="#" class="text-primary text-decoration-none">The Fool's Journey Deep Dive</a></h4>
+                            <p class="text-muted small">A deep dive into the Major Arcana and the archetypal transition of the first card.</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -128,33 +153,58 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row g-4 text-center text-md-start">
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <div class="d-flex align-items-center mb-3 justify-content-center justify-content-lg-start">
                         <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" class="me-2" style="border-radius:50%;">
                         <h4 class="fw-bold mb-0">Celestial Tarot</h4>
                     </div>
-                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom.</p>
+                    <p class="opacity-75 mb-4">Empowering souls to find their path through intuitive wisdom and sacred tools. Join our community of seekers.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-2 text-center text-md-start">
+                <div class="col-lg-2 col-md-6 text-center text-lg-start">
                     <h6 class="fw-bold mb-4">Company</h6>
                     <ul class="list-unstyled">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="shop.html">Shop</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 ms-auto text-center">
-                    <h6 class="fw-bold mb-4">Stay Connected</h6>
-                    <div class="d-flex gap-4 justify-content-center">
-                        <a href="#"><i class="bi bi-instagram fs-3"></i></a>
-                        <a href="#"><i class="bi bi-twitter fs-3"></i></a>
-                        <a href="#"><i class="bi bi-youtube fs-3"></i></a>
-                    </div>
+                <div class="col-lg-2 col-md-6 text-center text-lg-start">
+                    <h6 class="fw-bold mb-4">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="#">Shipping</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center text-lg-start mt-4 mt-lg-0">
+                    <h6 class="fw-bold mb-4">Subscribe to Guidance</h6>
+                    <p class="small opacity-75">Receive moon phase alerts and exclusive energy forecasts.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3 mx-auto mx-lg-0" style="max-width: 350px;">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-secondary text-primary fw-bold" type="button">Join</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <hr class="mt-5 mb-4 opacity-10">
-            <p class="small mb-0 text-center opacity-50">&copy; 2026 Celestial Tarot. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2026 Celestial Tarot. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="small mb-0">Designed with <i class="bi bi-heart-fill text-danger mx-1"></i> for Spiritual Seekers</p>
+                </div>
+            </div>
         </div>
     </footer>
 

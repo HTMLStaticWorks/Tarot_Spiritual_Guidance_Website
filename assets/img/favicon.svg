@@ -1,10 +1,10 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="512" height="512" rx="128" fill="#2D0B5A"/>
-<circle cx="256" cy="256" r="180" stroke="#E0C097" stroke-width="12" stroke-dasharray="20 10"/>
-<path d="M256 120L285.5 226.5L392 256L285.5 285.5L256 392L226.5 285.5L120 256L226.5 226.5L256 120Z" fill="#E0C097"/>
-<circle cx="256" cy="256" r="40" fill="#2D0B5A" stroke="#E0C097" stroke-width="8"/>
-<circle cx="150" cy="150" r="10" fill="#E0C097"/>
-<circle cx="362" cy="150" r="10" fill="#E0C097"/>
-<circle cx="150" cy="362" r="10" fill="#E0C097"/>
-<circle cx="362" cy="362" r="10" fill="#E0C097"/>
+<circle cx="256" cy="256" r="240" fill="#2D0B5A" stroke="#E0C097" stroke-width="12"/>
+<path d="M256 80L290 220L430 254L290 288L256 428L222 288L82 254L222 220L256 80Z" fill="#E0C097"/>
+<circle cx="256" cy="256" r="45" fill="#2D0B5A" stroke="#FAF9F6" stroke-width="4"/>
+<circle cx="256" cy="256" r="20" fill="#FAF9F6"/>
+<circle cx="120" cy="120" r="15" fill="#FAF9F6" opacity="0.6"/>
+<circle cx="392" cy="120" r="15" fill="#FAF9F6" opacity="0.6"/>
+<circle cx="120" cy="392" r="15" fill="#FAF9F6" opacity="0.6"/>
+<circle cx="392" cy="392" r="15" fill="#FAF9F6" opacity="0.6"/>
 </svg>

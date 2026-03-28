@@ -16,10 +16,11 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <style>
         .hero-astrology {
-            background: linear-gradient(rgba(26, 8, 54, 0.8), rgba(26, 8, 54, 0.8)), 
-                        url('https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4c5?q=80&w=2000&fm=jpg&fit=crop');
+            background-image: linear-gradient(rgba(13, 5, 32, 0.7), rgba(45, 11, 90, 0.8)), 
+                              url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?q=80&w=2000&fm=jpg&fit=crop');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             min-height: 90vh;
         }
     </style>
@@ -45,25 +46,20 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-sm glass-card">
-                            <li><a class="dropdown-item" href="index.html">Classic Version</a></li>
-                            <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <div class="rtl-toggle me-3 d-none d-lg-block" title="Toggle RTL">
+                    <div class="rtl-toggle me-3 d-none d-lg-flex" title="Toggle RTL">
                         <i class="bi bi-translate text-secondary"></i>
                     </div>
-                    <div class="theme-toggle me-4 d-none d-lg-block" id="theme-toggle-desktop">
+                    <div class="theme-toggle me-4 d-none d-lg-flex" id="theme-toggle-desktop">
                         <i class="bi bi-moon-stars-fill text-secondary"></i>
                     </div>
                     <a href="signup.html" class="btn btn-primary">Join Now</a>
@@ -80,18 +76,13 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Home
-                    </a>
-                    <ul class="dropdown-menu border-0 shadow-sm glass-card">
-                        <li><a class="dropdown-item" href="index.html">Home 1 - Tarot</a></li>
-                        <li><a class="dropdown-item" href="index2.html">Home 2 - Astrology</a></li>
-                    </ul>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index2.html">Home 2</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#celestial-events">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#zodiac">Zodiac</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <div class="d-grid gap-2 mt-4">
                 <a href="login.html" class="btn btn-outline-primary">Login</a>
@@ -166,7 +157,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=1000&fm=jpg&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="Energy Alignment">
+                    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1000&fm=jpg&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="Energy Alignment">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">Vibrational Medicine</h6>
@@ -235,21 +226,21 @@
     </section>
 
     <!-- Meet the Astrologers -->
-    <section class="section-padding bg-primary text-white">
+    <section class="section-padding bg-primary" id="astrologers">
         <div class="container">
             <div class="row align-items-end mb-5">
                 <div class="col-lg-7">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">Lineage</h6>
-                    <h2 class="display-5 fw-bold">Star Whisperers</h2>
-                    <p class="lead opacity-75 mb-0">Our astrologers carry decades of research into planetary influence and archetypal shifts.</p>
+                    <h2 class="display-5 fw-bold text-white dark-purple-on-gold">Star Whisperers</h2>
+                    <p class="lead text-white dark-purple-on-gold opacity-75 mb-0">Our astrologers carry decades of research into planetary influence and archetypal shifts.</p>
                 </div>
             </div>
             <div class="row g-4 text-primary">
                 <div class="col-md-6">
-                    <div class="card bg-white p-0 border-0 overflow-hidden shadow h-100">
+                    <div class="card p-0 border-0 overflow-hidden shadow h-100">
                         <div class="row g-0 h-100">
                             <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=600&fm=jpg&fit=crop" class="img-fluid h-100 w-100" object-fit="cover" alt="Astrologer">
+                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=600&fm=jpg&fit=crop" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Astrologer">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body p-4">
@@ -263,10 +254,10 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card bg-white p-0 border-0 overflow-hidden shadow h-100">
+                    <div class="card p-0 border-0 overflow-hidden shadow h-100">
                         <div class="row g-0 h-100">
                             <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&fm=jpg&fit=crop" class="img-fluid h-100 w-100" object-fit="cover" alt="Astrologer">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&fm=jpg&fit=crop" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Astrologer">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body p-4">
