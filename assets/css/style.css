@@ -738,3 +738,374 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #E0C097;
     color: #2D0B5A !important;
 }
+
+/* ===========================
+   GLOBAL DARK MODE CONTRAST FIXES
+   Ensures all text is readable in both light and dark themes
+   =========================== */
+
+/* --- Body & General Text --- */
+[data-theme="dark"] body {
+    color: #FAF9F6;
+}
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] p {
+    color: rgba(250, 249, 246, 0.85) !important;
+}
+[data-theme="dark"] span:not(.badge):not(.navbar-toggler-icon) {
+    color: inherit;
+}
+[data-theme="dark"] li {
+    color: rgba(250, 249, 246, 0.85);
+}
+[data-theme="dark"] label {
+    color: rgba(250, 249, 246, 0.85) !important;
+}
+[data-theme="dark"] small,
+[data-theme="dark"] .small {
+    color: rgba(250, 249, 246, 0.75) !important;
+}
+
+/* --- Section & Article Text --- */
+[data-theme="dark"] section p,
+[data-theme="dark"] article p,
+[data-theme="dark"] section .text-muted {
+    color: rgba(250, 249, 246, 0.75) !important;
+}
+[data-theme="dark"] section h2,
+[data-theme="dark"] section h3,
+[data-theme="dark"] section h4,
+[data-theme="dark"] section h5,
+[data-theme="dark"] section h6 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] article h4 a {
+    color: #E0C097 !important;
+}
+[data-theme="dark"] article h4 a:hover {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] article .text-muted {
+    color: rgba(250, 249, 246, 0.7) !important;
+}
+[data-theme="dark"] article span {
+    color: rgba(250, 249, 246, 0.75);
+}
+
+/* --- Blog Page --- */
+[data-theme="dark"] .blog-post h4,
+[data-theme="dark"] .blog-post h4 a {
+    color: #E0C097 !important;
+}
+
+/* --- About Page Values Cards --- */
+[data-theme="dark"] .col-md-4 .card p,
+[data-theme="dark"] .col-md-4 .card h4 {
+    color: #FAF9F6 !important;
+}
+
+/* --- How It Works Section --- */
+[data-theme="dark"] .col-md-4 h4 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .col-md-4 p.text-muted {
+    color: rgba(250, 249, 246, 0.7) !important;
+}
+
+/* --- About Section (hero-section alt) --- */
+[data-theme="dark"] .col-lg-6 h2,
+[data-theme="dark"] .col-lg-6 > p,
+[data-theme="dark"] .col-lg-6 .lead {
+    color: rgba(250, 249, 246, 0.9) !important;
+}
+[data-theme="dark"] .col-lg-6 .fw-bold:not(.btn):not(.badge) {
+    color: #FAF9F6 !important;
+}
+
+/* --- Contact Page --- */
+[data-theme="dark"] .contact-info h6,
+[data-theme="dark"] .contact-info p {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .d-flex .bg-primary {
+    background-color: #E0C097 !important;
+    color: #2D0B5A !important;
+}
+[data-theme="dark"] .d-flex .bg-primary i {
+    color: #2D0B5A !important;
+}
+[data-theme="dark"] .d-flex.align-items-center h6.text-primary {
+    color: #E0C097 !important;
+}
+[data-theme="dark"] .d-flex.align-items-center p.text-muted {
+    color: rgba(250, 249, 246, 0.7) !important;
+}
+/* Contact info hover cards */
+[data-theme="dark"] .d-flex.align-items-center.p-3.bg-white {
+    background-color: #1A0836 !important;
+    border-color: rgba(224, 192, 151, 0.15) !important;
+}
+/* Contact form card */
+[data-theme="dark"] .contact-form-card,
+[data-theme="dark"] .col-lg-7 .card {
+    background-color: #1A0836 !important;
+}
+[data-theme="dark"] .col-lg-7 .card h3 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #12052B !important;
+    color: #FAF9F6 !important;
+    border-color: rgba(224, 192, 151, 0.3) !important;
+}
+[data-theme="dark"] .form-control::placeholder {
+    color: rgba(250, 249, 246, 0.45) !important;
+}
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+    border-color: #E0C097 !important;
+    box-shadow: 0 0 0 3px rgba(224, 192, 151, 0.15) !important;
+}
+[data-theme="dark"] .form-select option {
+    background-color: #1A0836;
+    color: #FAF9F6;
+}
+[data-theme="dark"] .form-label {
+    color: rgba(250, 249, 246, 0.85) !important;
+}
+
+/* --- Shop Page --- */
+[data-theme="dark"] .card.h-100.border-0.shadow-sm.overflow-hidden {
+    background-color: #1A0836 !important;
+}
+[data-theme="dark"] .card h5.fw-bold {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .card p.small.text-muted {
+    color: rgba(250, 249, 246, 0.6) !important;
+}
+[data-theme="dark"] .card h4.text-secondary {
+    color: #E0C097 !important;
+}
+/* Shop sidebar */
+[data-theme="dark"] .card.p-4.border-0.shadow-sm.glass-card h5 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .card.p-4 .text-primary.text-decoration-none {
+    color: #E0C097 !important;
+}
+[data-theme="dark"] .badge.bg-secondary.text-primary {
+    background-color: #E0C097 !important;
+    color: #2D0B5A !important;
+}
+[data-theme="dark"] .text-muted.mt-2 {
+    color: rgba(250, 249, 246, 0.6) !important;
+}
+
+/* --- Index2 Zodiac Section --- */
+[data-theme="dark"] .col-6.col-md-3 .card h4 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .col-6.col-md-3 .card p.small {
+    color: rgba(250, 249, 246, 0.7) !important;
+}
+/* Index2 Celestial Events Cards */
+[data-theme="dark"] .card.h-100.p-4.border-0.shadow-sm.glass-card h4 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .card.h-100.p-4.border-0.shadow-sm.glass-card p {
+    color: rgba(250, 249, 246, 0.8) !important;
+}
+[data-theme="dark"] .card.h-100.p-4.border-0.shadow-sm.glass-card h6 {
+    color: rgba(250, 249, 246, 0.6) !important;
+}
+[data-theme="dark"] .display-4.fw-bold.text-secondary {
+    color: #E0C097 !important;
+}
+/* Index2 Astrologer cards */
+[data-theme="dark"] .card-body h4.fw-bold {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .card-body p.text-muted.small {
+    color: rgba(250, 249, 246, 0.6) !important;
+}
+[data-theme="dark"] .card-body p.small {
+    color: rgba(250, 249, 246, 0.75) !important;
+}
+[data-theme="dark"] .card-body a.text-secondary {
+    color: #E0C097 !important;
+}
+
+/* --- Primary Section (Mentors/Dark bg) --- */
+[data-theme="dark"] .bg-primary .card h4 {
+    color: #2D0B5A !important;
+}
+[data-theme="dark"] .bg-primary .card p {
+    color: rgba(45, 11, 90, 0.75) !important;
+}
+[data-theme="dark"] .bg-primary .card .text-muted {
+    color: rgba(45, 11, 90, 0.6) !important;
+}
+
+/* --- Pagination --- */
+[data-theme="dark"] .page-link {
+    background-color: #1A0836 !important;
+    border-color: rgba(224, 192, 151, 0.2) !important;
+    color: #E0C097 !important;
+}
+[data-theme="dark"] .page-item.active .page-link {
+    background-color: #E0C097 !important;
+    color: #2D0B5A !important;
+}
+[data-theme="dark"] .page-item.disabled .page-link {
+    color: rgba(250, 249, 246, 0.3) !important;
+}
+
+/* --- Footer (always dark, no change needed but ensure consistency) --- */
+[data-theme="dark"] .footer {
+    background-color: #0D0520 !important;
+    border-top: 1px solid rgba(224, 192, 151, 0.15);
+}
+[data-theme="dark"] .footer h4,
+[data-theme="dark"] .footer h6 {
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .footer p {
+    color: rgba(250, 249, 246, 0.72) !important;
+}
+[data-theme="dark"] .footer a {
+    color: rgba(250, 249, 246, 0.65) !important;
+}
+[data-theme="dark"] .footer a:hover {
+    color: #E0C097 !important;
+}
+[data-theme="dark"] .footer .form-control {
+    background-color: rgba(250, 249, 246, 0.1) !important;
+    border-color: rgba(250, 249, 246, 0.2) !important;
+    color: #FAF9F6 !important;
+}
+[data-theme="dark"] .footer .form-control::placeholder {
+    color: rgba(250, 249, 246, 0.4) !important;
+}
+[data-theme="dark"] .footer hr {
+    border-color: rgba(250, 249, 246, 0.1) !important;
+}
+
+/* --- Light Mode Explicit Fixes --- */
+/* Ensure nothing goes invisible in light mode */
+[data-theme="light"] body,
+body {
+    color: #2D0B5A;
+}
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+    color: #2D0B5A;
+}
+[data-theme="light"] p,
+[data-theme="light"] li,
+[data-theme="light"] span:not(.badge):not(.navbar-toggler-icon) {
+    color: #2D0B5A;
+}
+[data-theme="light"] .text-muted {
+    color: rgba(45, 11, 90, 0.6) !important;
+}
+/* Footer is always dark bg, so always light text */
+.footer,
+.footer h4,
+.footer h6,
+[data-theme="light"] .footer h4,
+[data-theme="light"] .footer h6 {
+    color: #FAF9F6 !important;
+}
+.footer p,
+[data-theme="light"] .footer p {
+    color: rgba(250, 249, 246, 0.72) !important;
+}
+.footer a,
+[data-theme="light"] .footer a {
+    color: rgba(250, 249, 246, 0.72) !important;
+}
+.footer a:hover,
+[data-theme="light"] .footer a:hover {
+    color: #E0C097 !important;
+}
+/* bg-primary sections always have light text */
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary h6,
+.bg-primary p,
+.bg-primary span {
+    color: #FAF9F6;
+}
+/* Hero section always has light text */
+.hero-section,
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.hero-astrology h1,
+.hero-astrology p {
+    color: #FAF9F6 !important;
+}
+
+/* --- Global High Contrast Fixes --- */
+/* Fix .bg-primary in dark mode: bg is light gold so text must be dark */
+[data-theme="dark"] .bg-primary,
+[data-theme="dark"] .bg-primary h1,
+[data-theme="dark"] .bg-primary h2,
+[data-theme="dark"] .bg-primary h3,
+[data-theme="dark"] .bg-primary h4,
+[data-theme="dark"] .bg-primary h5,
+[data-theme="dark"] .bg-primary h6,
+[data-theme="dark"] .bg-primary p,
+[data-theme="dark"] .bg-primary span:not(.badge),
+[data-theme="dark"] .bg-primary div,
+[data-theme="dark"] .bg-primary .text-white,
+[data-theme="dark"] .bg-primary i,
+[data-theme="dark"] .bg-primary .lead {
+    color: #2D0B5A !important;
+}
+
+[data-theme="dark"] .bg-primary .text-muted,
+[data-theme="dark"] .bg-primary .opacity-75 {
+    color: rgba(45, 11, 90, 0.75) !important;
+}
+
+/* Fix .bg-secondary in both modes: bg is light gold or white so text must be dark */
+.bg-secondary,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary h4,
+.bg-secondary h5,
+.bg-secondary h6,
+.bg-secondary p,
+.bg-secondary span:not(.badge),
+.bg-secondary div,
+[data-theme="dark"] .bg-secondary,
+[data-theme="dark"] .bg-secondary h1,
+[data-theme="dark"] .bg-secondary h2,
+[data-theme="dark"] .bg-secondary h3,
+[data-theme="dark"] .bg-secondary h4,
+[data-theme="dark"] .bg-secondary h5,
+[data-theme="dark"] .bg-secondary h6,
+[data-theme="dark"] .bg-secondary p,
+[data-theme="dark"] .bg-secondary span:not(.badge),
+[data-theme="dark"] .bg-secondary div {
+    color: #2D0B5A !important;
+}
