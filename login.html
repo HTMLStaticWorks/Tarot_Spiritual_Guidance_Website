@@ -17,14 +17,17 @@
 </head>
 <body class="auth-bg">
 
+    <div class="auth-controls">
+        <div class="rtl-toggle" title="Toggle RTL">
+            <i class="bi bi-arrow-left-right"></i>
+        </div>
+        <div class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+        </div>
+    </div>
+
     <div class="container d-flex align-items-center justify-content-center py-5">
         <div class="auth-card">
-            <div class="rtl-toggle" title="Toggle RTL" style="position: absolute; top: 20px; right: 68px; margin: 0; z-index: 10;">
-                <i class="bi bi-translate"></i>
-            </div>
-            <div class="theme-toggle" id="theme-toggle" title="Toggle Theme">
-                <i class="bi bi-moon-stars-fill"></i>
-            </div>
             <div class="text-center mb-5">
                 <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center gap-2 mb-4">
                     <img src="assets/img/favicon.svg" alt="Celestial Tarot" width="34" height="34" style="border-radius:50%;">
@@ -34,7 +37,7 @@
                 <p class="text-muted small">Realign with your celestial path.</p>
             </div>
 
-            <form action="dashboard.html">
+            <form action=\"index.html\">
                 <div class="mb-4">
                     <label class="form-label fw-bold">Email Address</label>
                     <input type="email" class="form-control" placeholder="name@example.com" required>
@@ -51,7 +54,7 @@
                         <input type="checkbox" class="form-check-input" id="remember">
                         <label class="form-check-label small opacity-75" for="remember">Remember Me</label>
                     </div>
-                    <a href="#" class="small text-decoration-none fw-bold text-secondary">Forgot Password?</a>
+                    <a href="#" class="small text-decoration-none fw-bold text-primary">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn btn-primary w-100 py-3 mb-4 shadow">Login</button>
             </form>
@@ -70,7 +73,7 @@
             </div>
 
             <p class="text-center mt-5 mb-0 opacity-75">
-                New seeker? <a href="signup.html" class="fw-bold text-decoration-none text-secondary">Explore Options</a>
+                New seeker? <a href="signup.html" class="fw-bold text-decoration-none text-primary">Explore Options</a>
             </p>
         </div>
     </div>
@@ -80,3 +83,7 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+

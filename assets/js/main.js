@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateRtlIcons(dir) {
         document.querySelectorAll('.rtl-toggle i').forEach(icon => {
-            icon.className = dir === 'rtl' ? 'bi bi-align-start' : 'bi bi-translate';
+            icon.className = 'bi bi-arrow-left-right';
         });
     }
 
