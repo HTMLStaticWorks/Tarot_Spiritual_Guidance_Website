@@ -66,6 +66,8 @@ h6 {
     color: var(--secondary-color) !important;
 }
 
+
+
 .text-muted {
     color: rgba(45, 11, 90, 0.6) !important;
 }
@@ -992,6 +994,12 @@ h6 {
     }
 }
 
+[data-theme="dark"] .experience-badge,
+[data-theme="dark"] .experience-badge * {
+    background-color: #E0C097 !important;
+    color: #2D0B5A !important;
+}
+
 .pulse-animation {
     animation: pulse 3s infinite;
 }
@@ -1576,4 +1584,14 @@ body {
 }
 [data-theme="dark"] .accordion-body.text-muted {
     color: rgba(250, 249, 246, 0.7) !important;
+}
+
+/* Force Purple Text on Experience Badge in all modes */
+.experience-badge,
+.experience-badge *,
+[data-theme="dark"] .experience-badge,
+[data-theme="dark"] .experience-badge * {
+    background-color: #E0C097 !important;
+    color: #2D0B5A !important;
+    z-index: 10;
 }
